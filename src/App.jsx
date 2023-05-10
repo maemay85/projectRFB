@@ -9,25 +9,13 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <p> all the things she said </p>
+        <p> all the things she said </p>
+        <p> runnin' through my head </p>
+        <p> runnin' through my head </p>
+        <p> runnin' through my head! </p>
+<a href="https://www.youtube.com/watch?v=8mGBaXPlri8">THIS IS NOT ENOUGH!</a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
