@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-
-      <Nav />
-
+      <nav>
+        <Nav />
+      </nav>
       <div id='app-wrapper'>
       </div>
 

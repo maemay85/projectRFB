@@ -10,6 +10,7 @@ const SpaceLink = styled.div`
     cursor: pointer;
     width: fit-content;
     color: #ccc;
+    z-index: 2;
   }
   &:hover {
     box-shadow: 0 0 1px 1px #ccc;
