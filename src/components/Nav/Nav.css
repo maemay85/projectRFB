@@ -1,8 +1,0 @@
-.nav-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
-  border: 1px solid white;
-}

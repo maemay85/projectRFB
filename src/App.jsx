@@ -1,6 +1,5 @@
 import React from 'react'
-
-import './App.css'
+import { RowContainer, ColumnContainer } from './components/styled-components/Containers'
 import Nav from './components/Nav/Nav'
 
 function App() {
@@ -8,15 +7,12 @@ function App() {
 
   return (
     <>
-    <div className='nav-wrapper'>
-      <Nav />
-    </div>
-      <div className='app-wrapper'>
 
-        <div className='app-title'>
-        hello dad
-        </div>
+      <Nav />
+
+      <div id='app-wrapper'>
       </div>
+
     </>
   )
 }

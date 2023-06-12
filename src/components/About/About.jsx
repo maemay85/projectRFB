@@ -1,13 +1,13 @@
 import React from 'react'
-import './About.css';
+
 
 function About() {
 
 
   return (
     <>
-      <div className='About-wrapper'>
-        <div className='About-container'>
+      <div>
+        <div>
           <h1>About Me</h1>
 
             <p>check check. is this thing on? oh it’s a text field? no? not even a form? just a static element on a static page? ok. well i’m not exactly prepared for this but uh…</p>
