@@ -52,22 +52,64 @@ const SolarSystem = () => {
 
   const planets = [
     {name: 'sun',
-    radius: 10,
+    radius: 3,
     orbit: 0,
     colorone: 'rgba(255, 200, 100, 1)',
     colortwo: 'rgba(255, 220, 120, 1)'
     },
+    {name: 'mercury',
+    radius: .33,
+    orbit: 4.0012,
+    colorone: '#d90808',
+    colortwo: '#ef844e'
+    },
     {name: 'earth',
-    radius: 2,
-    orbit: 15,
+    radius: .66,
+    orbit: 15.075,
     colorone: 'rgba(0, 112, 187, 1)',
     colortwo: '#59bccb'
     },
+    {name: 'venus',
+    radius: .66,
+    orbit: 10.3567,
+    colorone: '#f9c006',
+    colortwo: '#ce6005'
+    },
+    {name: 'mars',
+    radius: .55,
+    orbit: 20.257,
+    colorone: '#f01313',
+    colortwo: '#ce6005'
+    },
     {name: 'jupiter',
-    radius: 6,
-    orbit: 30,
+    radius: 1.5,
+    orbit: 30.11,
     colorone: 'rgba(193, 154, 107, 1)',
     colortwo: '#d34f1a'
+    },
+    {name: 'saturn',
+    radius: 1,
+    orbit: 35.87,
+    colorone: '#443ce0',
+    colortwo: '#8480f3'
+    },
+    {name: 'neptune',
+    radius: 1,
+    orbit: 40.838,
+    colorone: '#443ce0',
+    colortwo: '#8480f3'
+    },
+    {name: 'uranus',
+    radius: 1,
+    orbit: 45.38,
+    colorone: '#443ce0',
+    colortwo: '#8480f3'
+    },
+    {name: 'pluto',
+    radius: .25,
+    orbit: 60.3,
+    colorone: '#443ce0',
+    colortwo: '#8480f3'
     },
 
 
