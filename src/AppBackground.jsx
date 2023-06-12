@@ -1,3 +1,4 @@
+import SolarSystem from "./components/styled-components/SolarSystem";
 import { StarBackground } from "./components/styled-components/StarBackground";
 
 const AppBackground = () => {
@@ -19,6 +20,8 @@ const AppBackground = () => {
       <StarBackground time='850s' density={200} blur={.15} size={.0175}></StarBackground>
       <StarBackground time='1250s' density={200} blur={.25} size={.0175}></StarBackground>
       <StarBackground time='1750s' density={200} blur={.25} size={.0175}></StarBackground>
+
+      <SolarSystem />
 
     </div>
   );
