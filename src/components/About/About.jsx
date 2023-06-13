@@ -1,4 +1,5 @@
 import React from 'react'
+import { ColumnContainer } from '../styled-components/Containers'
 
 
 function About() {
@@ -6,23 +7,20 @@ function About() {
 
   return (
     <>
-      <div>
-        <div>
-          <h1>About Me</h1>
+      <ColumnContainer padding='0 10rem' position='absolute'>
+            <h1>About Me</h1>
 
-            <p>check check. is this thing on? oh it’s a text field? no? not even a form? just a static element on a static page? ok. well i’m not exactly prepared for this but uh…</p>
+            <p>Hi I'm Mae, and I love to build things!</p>
 
-            <p>Hi my name is Mae May. Same sound, spelled different, kinda weird but it just worked out that way.</p>
+            <p>As a fullstack web developer, I find It quite thrilling to plan out an application from the backend to the front, write code, debug, debug, refactor, debug, debug again, and refactor once more, and then just like *magic* to deploy and have something out in the world that can actually help people.</p>
 
-            <p>I am a software engineer, designer, performing artist, operations expert, and just a real piece of work overall.</p>
+            <br/><br/><br/><br/>
 
-            <p>Technology-wise I’ve worked primarily with full stack applications (PostgreSQL, Express, React, Node JS), domain management, and I actually enjoy CSS, if you can believe that. </p>
+            <p>Prior to coding, I ran a woodworking business and learned all kinds of things about working with clients, sketching out their ideas, creating a roadmap, and communicating the timeline with them, and working with a variety of components to bring the project into physical reality. It was actually this that prepared me for fullstack development - only now I'm working with code instead of, you know, wood. </p>
 
-            <p>My main goal within engineering - having over thirty years of experience playing, writing, and performing music on a bunch of different instruments - is to work on projects to improve and develop new music technologies, whether they are teaching tools, DAWs and plugins, or software for digital instruments. To that end I am currently learning C++ and poking around with an Arduino to get more familiar with electronics.</p>
+            <p>And of course, at heart, I am still and always will be an artist - and have extensive experience in music and dance performance and composition, and textile design and fabrication.  Again, I love to build things! </p>
 
-            <p>I also simply love coding and am keenly interested in pursuing other projects and opportunities - so please don’t be shy, and drop me a line here!</p>
-        </div>
-      </div>
+        </ColumnContainer>
     </>
   )
 }

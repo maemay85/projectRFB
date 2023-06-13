@@ -1,5 +1,6 @@
 import { styled } from "styled-components"
 import { ColumnContainer } from "./Containers"
+import { Link } from "react-router-dom"
 
 const StyledProjectContainer = styled.div`
   & {
@@ -17,12 +18,18 @@ const StyledProjectContainer = styled.div`
   }
 `
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+  const text = props.text;
+  const url = props.url;
+  const tagline = props.tagline;
   return (
     <>
-      <StyledProjectContainer>
-        <h1>this is a project card</h1>
-      </StyledProjectContainer>
+      <a href={url} target='_blank' rel='noreferrer'>
+        <StyledProjectContainer>
+          <h1>{text}</h1>
+          <p>{tagline}</p>
+        </StyledProjectContainer>
+      </a>
     </>
   )
 }

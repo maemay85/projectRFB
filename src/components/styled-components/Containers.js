@@ -21,7 +21,7 @@ export const ColumnContainer = styled.div`
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
   align-items: ${(props) => (props.align ? props.align : "center")};
   justify-content: space-between;
-  position: relative;
+  position: ${(props) => (props.position ? props.position : "relative")};
   flex-direction: column;
   border: ${(props) =>
     props.border ? `1px solid rgba(150, 150, 150, 0.5)` : null};
