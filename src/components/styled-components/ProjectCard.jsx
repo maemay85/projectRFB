@@ -32,10 +32,11 @@ const ProjectCard = (props) => {
       <a href={url} target='_blank' rel='noreferrer'>
         <StyledProjectContainer>
           <h1>{text}</h1>
-          <p>{tagline}</p>
           <div className="image-container">
             <img src={imageUrl} />
           </div>
+          <p>{tagline}</p>
+
         </StyledProjectContainer>
       </a>
     </>
