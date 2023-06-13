@@ -38,7 +38,7 @@ export const BottomNav = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   position: fixed;
-  top: 92%;
+  top: 79%;
   right: 1%;
   flex-direction: row;
   border: ${(props) =>
@@ -55,7 +55,7 @@ export const TopNav = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   top: 1%;
   flex-direction: row;
   border: ${(props) =>

@@ -37,7 +37,7 @@ const rotateAnimation = keyframes`
  `
 
 const PlanetOrbit = styled.div`
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   margin: ${(props) => `-${props.orbit/2}rem 0 0 -${props.orbit/2}rem`};

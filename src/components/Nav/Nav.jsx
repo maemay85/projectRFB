@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BottomNav, RowContainer, TopNav } from '../styled-components/Containers';
+import { BottomNav, ColumnContainer, RowContainer, TopNav } from '../styled-components/Containers';
 import SpaceLink from '../styled-components/SpaceLink';
 import { Link } from 'react-router-dom';
 
@@ -24,15 +24,17 @@ function Nav() {
 
       </TopNav>
       <BottomNav>
-        <SpaceLink>
-          <a href ="https://github.com/maemay85" target='_blank' rel='noreferrer'>github</a>
-        </SpaceLink>
-        <SpaceLink>
-          <a href="https://maemaywoodworking.com" target='_blank' rel='noreferrer'>woodworking</a>
-        </SpaceLink>
-        <SpaceLink>
-          <a href="https://maemay.art" target='_blank' rel='noreferrer'>performance</a>
-        </SpaceLink>
+        <ColumnContainer>
+          <SpaceLink>
+            <a href ="https://github.com/maemay85" target='_blank' rel='noreferrer'>github</a>
+          </SpaceLink>
+          <SpaceLink>
+            <a href="https://maemaywoodworking.com" target='_blank' rel='noreferrer'>woodworking</a>
+          </SpaceLink>
+          <SpaceLink>
+            <a href="https://maemay.art" target='_blank' rel='noreferrer'>performance</a>
+          </SpaceLink>
+        </ColumnContainer>
       </BottomNav>
     </>
   )

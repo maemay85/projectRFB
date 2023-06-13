@@ -9,8 +9,12 @@ const StyledProjectContainer = styled.div`
     border-radius: 1rem;
     padding: 0.5rem;
     margin: 2rem;
-    width: fit-content;
+    width: 20rem;
     color: #ccc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   &:hover {
     box-shadow: 0 0 1px 1px #ccc;
@@ -22,12 +26,16 @@ const ProjectCard = (props) => {
   const text = props.text;
   const url = props.url;
   const tagline = props.tagline;
+  const imageUrl = props.imageUrl
   return (
     <>
       <a href={url} target='_blank' rel='noreferrer'>
         <StyledProjectContainer>
           <h1>{text}</h1>
           <p>{tagline}</p>
+          <div className="image-container">
+            <img src={imageUrl} />
+          </div>
         </StyledProjectContainer>
       </a>
     </>
