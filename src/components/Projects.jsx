@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'augmentEd',
-      tagline: 'A peer-to-peer music teaching web application. Built in collaboration with Shoshana Levit, Rachel Cora Wood, and Zoe Moersch',
+      tagline: 'A peer-to-peer music teaching web application. Built in collaboration with Shoshana Levit, Rachel Cora Wood, and Zoe Moersch. *** Please note that this site is deployed on a free service, and the server is slow, so it can take a while to load ***',
       url: 'https://augmented.onrender.com/',
       imageUrl: 'https://github.com/maemay85/maeMayPortfolioSite/blob/main/src/assets/augmented%20thumbnail.png?raw=true'
     },
