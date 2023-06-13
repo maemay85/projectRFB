@@ -13,10 +13,11 @@ const SpaceLink = styled.div`
     z-index: 2;
   }
   &:hover {
-    box-shadow: 0 0 1px 1px #ccc;
+    box-shadow: 0 0 1px 1px #fcf8d6;
+
   }
-  & a {
-    color: #ccc;
+  &:hover a {
+    color: #fcf8d6;
   }
 `;
 

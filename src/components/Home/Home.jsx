@@ -1,4 +1,5 @@
 import React from 'react'
+import { ColumnContainer } from '../styled-components/Containers'
 
 
 function Home() {
@@ -6,9 +7,9 @@ function Home() {
 
   return (
     <>
-    <div>
-    HOMEPAGE
-      </div>
+      <ColumnContainer  width='95vw' height='150vh' margin='2rem 0'>
+
+      </ColumnContainer>
     </>
   )
 }

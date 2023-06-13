@@ -28,7 +28,7 @@ const PlanetImage = styled.div`
       ${props.radius  / 20}rem
       rgba(255, 255, 255, .25)`};
     color: #ccc;
-    z-index: -2;
+    z-index: 0;
 `
 const rotateAnimation = keyframes`
   100% {
@@ -46,6 +46,7 @@ const PlanetOrbit = styled.div`
   height: ${(props) => `${props.orbit}rem`};
   animation: ${rotateAnimation} linear infinite;
   animation-duration: ${(props)=> `${props.orbit}s`};
+  z-index: 0;
 `
 
 const SolarSystem = () => {
@@ -96,19 +97,19 @@ const SolarSystem = () => {
     {name: 'neptune',
     radius: 1,
     orbit: 40.838,
-    colorone: '#443ce0',
-    colortwo: '#8480f3'
+    colorone: '#3ce083',
+    colortwo: '#80f3cb'
     },
     {name: 'uranus',
     radius: 1,
     orbit: 45.38,
-    colorone: '#443ce0',
-    colortwo: '#8480f3'
+    colorone: '#3c73e0',
+    colortwo: '#80bdf3'
     },
     {name: 'pluto',
     radius: .25,
     orbit: 60.3,
-    colorone: '#443ce0',
+    colorone: '#807ea7',
     colortwo: '#8480f3'
     },
 
@@ -116,7 +117,7 @@ const SolarSystem = () => {
   ]
 
   return (
-    <>
+    <div id='solar-system'>
     {planets.map((planet)=> {
       return ( <div key={planet.name}>
         <PlanetOrbit orbit={planet.orbit} >
@@ -132,7 +133,7 @@ const SolarSystem = () => {
     }
 
     )}
-    </>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ function App() {
       <nav>
         <Nav />
       </nav>
-      <RowContainer>
+      <RowContainer width='97vw' height='88vh' margin='4rem 2rem 1rem 1rem'>
         <AppRoutes />
       </RowContainer>
 
