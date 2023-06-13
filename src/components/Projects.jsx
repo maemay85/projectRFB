@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       title: 'dropdown sounds',
-      tagline: 'work in process: dropdown sounds will be an interactive music theory teaching tool, allowing curious people to explore keys, chords, and scales with an engaging dropdown-menu-oriented interface',
+      tagline: 'Work in progress: dropdown sounds will be an interactive music theory teaching tool, allowing curious people to explore keys, chords, and scales with an engaging dropdown-menu-oriented interface',
       url: 'https://github.com/maemay85/dropdownSounds',
       imageUrl: 'https://github.com/maemay85/maeMayPortfolioSite/blob/main/src/assets/dropdown%20thumbnail.png?raw=true'
     },
