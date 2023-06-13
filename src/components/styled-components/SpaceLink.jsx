@@ -14,7 +14,6 @@ const SpaceLink = styled.div`
   }
   &:hover {
     box-shadow: 0 0 1px 1px #ccc;
-    transition: ease-in-out 0.15s;
   }
   & a {
     color: #ccc;
