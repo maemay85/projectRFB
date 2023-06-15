@@ -1581,6 +1581,11 @@ electron-to-chromium@^1.4.411:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.427.tgz"
   integrity sha512-HK3r9l+Jm8dYAm1ctXEWIC+hV60zfcjS9UA5BDlYvnI5S7PU/yytjpvSrTNrSSRRkuu3tDyZhdkwIczh+0DWaw==
 
+emailjs-com@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
+  integrity sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==
+
 es-abstract@^1.19.0, es-abstract@^1.20.4:
   version "1.21.2"
   resolved "https://registry.npmjs.org/es-abstract/-/es-abstract-1.21.2.tgz"

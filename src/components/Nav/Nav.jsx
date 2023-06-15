@@ -1,6 +1,5 @@
 
-import React from 'react';
-import { BottomNav, ColumnContainer, RowContainer, TopNav } from '../styled-components/Containers';
+import { BottomNav, ColumnContainer, TopNav } from '../styled-components/Containers';
 import SpaceLink from '../styled-components/SpaceLink';
 import { Link } from 'react-router-dom';
 
@@ -20,6 +19,9 @@ function Nav() {
         </SpaceLink>
         <SpaceLink>
           <Link to={'/about'}>about</Link>
+        </SpaceLink>
+        <SpaceLink>
+          <Link to={'/contact'}>get in touch</Link>
         </SpaceLink>
 
       </TopNav>
