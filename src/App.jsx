@@ -1,5 +1,5 @@
-import React from 'react'
-import { RowContainer, ColumnContainer } from './components/styled-components/Containers'
+
+import { RowContainer } from './components/styled-components/Containers'
 import Nav from './components/Nav/Nav'
 import AppRoutes from './AppRoutes'
 

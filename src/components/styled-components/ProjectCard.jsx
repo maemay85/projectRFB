@@ -1,6 +1,4 @@
 import { styled } from "styled-components"
-import { ColumnContainer } from "./Containers"
-import { Link } from "react-router-dom"
 
 const StyledProjectContainer = styled.div`
   & {
