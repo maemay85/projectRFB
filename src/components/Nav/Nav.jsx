@@ -21,7 +21,7 @@ function Nav() {
           <Link to={'/about'}>about</Link>
         </SpaceLink>
         <SpaceLink>
-          <Link to={'/contact'}>get in touch</Link>
+          <Link to={'/contact'}>contact</Link>
         </SpaceLink>
 
       </TopNav>

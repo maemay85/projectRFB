@@ -1,5 +1,7 @@
 import { useRef } from "react"
 import emailjs from "emailjs-com";
+import SpaceLink from "./styled-components/SpaceLink";
+import { Link } from "react-router-dom";
 
 
 const EmailContactForm = () => {
@@ -27,6 +29,9 @@ const EmailContactForm = () => {
         <textarea name="message" />
         <input type="submit" value="Send" className="submit" />
       </form>
+      <SpaceLink>
+        <Link to={'/contact'}>back to contact</Link>
+      </SpaceLink>
     </>
   )
 
