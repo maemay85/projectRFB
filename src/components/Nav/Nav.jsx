@@ -1,6 +1,6 @@
 
 import { BottomNav, ColumnContainer, TopNav } from '../styled-components/Containers';
-import SpaceLink from '../styled-components/SpaceLink';
+import { SpaceLink } from '../styled-components/SpaceLink';
 import { Link } from 'react-router-dom';
 
 
