@@ -9,7 +9,7 @@ function Contact() {
 
   return (
     <>
-      <ColumnContainer border="true" id="contact" width="95vw">
+      <ColumnContainer id="contact" width="95vw">
 
           <h1>Get in touch:</h1>
         <RowContainer id="contacts-list">

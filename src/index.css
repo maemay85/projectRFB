@@ -48,6 +48,37 @@ h1 {
   font-size: 2rem;
 }
 
+input, textarea {
+  width: 25rem;
+  border-radius: .5rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: #f9f9f9;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+label, .submit{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.submit {
+  font-family: 'Nunito', sans-serif;
+}
+
+.submit:hover {
+  box-shadow: 0 0 1px 1px #fcf8d6;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
