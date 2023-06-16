@@ -23,7 +23,7 @@ const EmailContactForm = () => {
   return (
     <>
       <form ref={form} onSubmit={sendEmail}>
-        <label>Get in touch!</label>
+        <label>Send me an email, please and thank you: </label>
         <input type="text" placeholder="Name" name="name" />
 
         <input type="email" placeholder="Email" name="email" />
