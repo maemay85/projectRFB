@@ -1,5 +1,5 @@
 import { ColumnContainer, RowContainer } from "./styled-components/Containers"
-import ProjectCard from "./styled-components/ProjectCard"
+import ResourceCard from "./styled-components/ProjectCard"
 
 
 
@@ -32,7 +32,7 @@ const Projects = () => {
       <ColumnContainer width='100vw'>
         {projects.map((project)=>{
           return (
-            <ProjectCard
+            <ResourceCard
               key={project.title}
               text={project.title}
               url={project.url}

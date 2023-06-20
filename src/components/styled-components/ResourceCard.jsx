@@ -20,7 +20,7 @@ const StyledProjectContainer = styled.div`
   }
 `
 
-const ProjectCard = (props) => {
+const ResourceCard = (props) => {
   const text = props.text;
   const url = props.url;
   const tagline = props.tagline;
@@ -41,4 +41,4 @@ const ProjectCard = (props) => {
   )
 }
 
-export default ProjectCard
+export default ResourceCard

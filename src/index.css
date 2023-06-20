@@ -5,8 +5,8 @@
   font-size: 2.5vmin;
 
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: black;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 237, 237);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,11 +18,11 @@
 
 a {
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(0, 0, 0, 0.87);
   text-decoration: inherit;
 }
 a:hover {
-  color: #fcf8d6;
+  color: #000000;
 }
 
 body {
@@ -51,8 +51,8 @@ h1 {
 input, textarea {
   width: 25rem;
   border-radius: .5rem;
-  background: rgba(255, 255, 255, 0.15);
-  color: #f9f9f9;
+  background: rgba(199, 198, 198, 0.15);
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -70,7 +70,7 @@ label, .submit{
 }
 
 .submit:hover {
-  box-shadow: 0 0 1px 1px #fcf8d6;
+  box-shadow: 0 0 1px 1px #060202;
 
 }
 
@@ -108,13 +108,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #f9f9f9;
-    background-color: black;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #000000;
   }
 }

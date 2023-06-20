@@ -1,6 +1,6 @@
 
 import { BottomNav, ColumnContainer, TopNav } from '../styled-components/Containers';
-import { SpaceLink } from '../styled-components/SpaceLink';
+import { StyledLink } from '../styled-components/StyledLink';
 import { Link } from 'react-router-dom';
 
 
@@ -14,28 +14,28 @@ function Nav() {
         <Link to={'/'}>
           <h1>mae may</h1>
         </Link>
-        <SpaceLink>
+        <StyledLink>
           <Link to={'/projects'}>projects</Link>
-        </SpaceLink>
-        <SpaceLink>
+        </StyledLink>
+        <StyledLink>
           <Link to={'/about'}>about</Link>
-        </SpaceLink>
-        <SpaceLink>
+        </StyledLink>
+        <StyledLink>
           <Link to={'/contact'}>contact</Link>
-        </SpaceLink>
+        </StyledLink>
 
       </TopNav>
       <BottomNav>
         <ColumnContainer>
-          <SpaceLink>
+          <StyledLink>
             <a href ="https://github.com/maemay85" target='_blank' rel='noreferrer'>github</a>
-          </SpaceLink>
-          <SpaceLink>
+          </StyledLink>
+          <StyledLink>
             <a href="https://maemaywoodworking.com" target='_blank' rel='noreferrer'>woodworking</a>
-          </SpaceLink>
-          <SpaceLink>
+          </StyledLink>
+          <StyledLink>
             <a href="https://maemay.art" target='_blank' rel='noreferrer'>performance</a>
-          </SpaceLink>
+          </StyledLink>
         </ColumnContainer>
       </BottomNav>
     </>
