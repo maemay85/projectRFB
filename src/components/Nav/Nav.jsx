@@ -12,10 +12,10 @@ function Nav() {
       <TopNav width='96vw' margin="0 2vw " id='top-nav'>
 
         <Link to={'/'}>
-          <h1>mae may</h1>
+          <h1>Reuben Fuller Bennett</h1>
         </Link>
         <StyledLink>
-          <Link to={'/projects'}>projects</Link>
+          <Link to={'/tenantresources'}>tenant resources</Link>
         </StyledLink>
         <StyledLink>
           <Link to={'/about'}>about</Link>
@@ -25,19 +25,7 @@ function Nav() {
         </StyledLink>
 
       </TopNav>
-      <BottomNav>
-        <ColumnContainer>
-          <StyledLink>
-            <a href ="https://github.com/maemay85" target='_blank' rel='noreferrer'>github</a>
-          </StyledLink>
-          <StyledLink>
-            <a href="https://maemaywoodworking.com" target='_blank' rel='noreferrer'>woodworking</a>
-          </StyledLink>
-          <StyledLink>
-            <a href="https://maemay.art" target='_blank' rel='noreferrer'>performance</a>
-          </StyledLink>
-        </ColumnContainer>
-      </BottomNav>
+
     </>
   )
 }

@@ -33,7 +33,7 @@ export const ColumnContainer = styled.div`
   z-index: 3;
 `;
 
-export const BottomNav = styled.div`
+/* export const BottomNav = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -49,7 +49,7 @@ export const BottomNav = styled.div`
   width: ${(props) => (props.width ? props.width : "auto")};
   height: ${(props) => (props.height ? props.height : "auto")};
   z-index: 4;
-`;
+`; */
 
 export const TopNav = styled.div`
   display: flex;
