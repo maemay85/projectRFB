@@ -10,7 +10,7 @@ const EmailContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+//the arguments passed to sendForm below need to be updated after creating a new emailjs template for Reuben's site
     emailjs.sendForm('service_f0weiij', 'template_9tf6q6f', form.current, 'hxHheb-8UKemaGtn8').then((result) => {
       console.log(result.text);
       alert("message sent!")
