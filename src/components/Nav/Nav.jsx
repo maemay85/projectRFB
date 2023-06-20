@@ -1,5 +1,5 @@
 
-import { BottomNav, ColumnContainer, TopNav } from '../styled-components/Containers';
+import { ColumnContainer, TopNav } from '../styled-components/Containers';
 import { StyledLink } from '../styled-components/StyledLink';
 import { Link } from 'react-router-dom';
 
