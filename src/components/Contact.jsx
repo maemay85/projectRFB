@@ -12,7 +12,7 @@ function Contact() {
     <>
       <ColumnContainer id="contact" width="95vw">
 
-          <h1>Get in touch!</h1>
+          <h1>Get in touch</h1>
         <RowContainer margin="3rem 0 0 0" id="contacts-list">
 
 
