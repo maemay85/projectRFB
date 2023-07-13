@@ -1,12 +1,19 @@
 :root {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Noto Sans';
   line-height: 1.5;
   font-weight: 400;
   font-size: 2.5vmin;
 
+  --primary-background: #FAF8F4;
+  --secondary-background: #F2F3E5;
+  --bright-pop: #E9F88D;
+  --dark-pop: #8A3683;
+  --dark-text: #000000;
+  --light-text: #414042;
+  color: var(--dark-text);
+  background-color: var(--primary-background);
 
-  color: rgba(0, 0, 0, 0.87);
-  background-color: rgb(255, 237, 237);
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,95 +23,70 @@
 
 }
 
-a {
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.87);
-  text-decoration: inherit;
+@font-face {
+  font-family: 'henrik';
+  src: url('./assets/Henrik-Regular.otf');
 }
-a:hover {
-  color: #000000;
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 2vmin;
 }
 
 body {
   position: relative;
-  margin: 0;
   display: flex;
   place-items: center;
-  width: 100%;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-
-}
-
-nav {
-  position: absolute;
-  top: 2%;
 }
 
 h1 {
-  position: relative;
-  margin: 0;
+  color: var(--dark-text);
+  font-family: 'henrik';
+  font-size: 4rem;
+}
+
+h2 {
+  color: var(--dark-text);
+  font-family: 'henrik';
   font-size: 2rem;
 }
 
-input, textarea {
-  width: 25rem;
-  border-radius: .5rem;
-  background: rgba(199, 198, 198, 0.15);
-  color: #000000;
-  margin-bottom: 1rem;
-}
-
-textarea {
-  height: 10rem;
-}
-
-label, .submit{
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-.submit {
-  font-family: 'Nunito', sans-serif;
-}
-
-.submit:hover {
-  box-shadow: 0 0 1px 1px #060202;
-
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+a {
   font-weight: 500;
-  font-family: inherit;
-  background-color: black;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: var(--dark-text);
+  text-decoration: none;
 }
 
-.image-container img{
-  margin-top: 1rem;
-  width: 15rem;
-  height: auto;
-  border-radius: 1rem;
+a:hover {
+  color: var(--dark-pop);
+  text-decoration: underline;
 }
 
+a#site-title:hover {
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
+.title {
+  color: var(--dark-text);
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--dark-text);
+  font-size: 1.8rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
