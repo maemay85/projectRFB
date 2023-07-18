@@ -2,17 +2,18 @@
 import { Link } from 'react-router-dom'
 import { ColumnContainer, RowContainer } from './styled-components/Containers'
 import { ContactStyledLink } from './styled-components/StyledLink'
+import { PropTypes } from 'prop-types'
 
 
+function Contact(props) {
 
-function Contact() {
-
+  const language = props.language;
 
   return (
     <>
       <ColumnContainer margin='10rem 0 0 0' id="contact" width="95vw">
 
-          <h1>Get in touch</h1>
+          {language === 'english' ? <h1>Get in touch</h1> : <h1>Ponerse en contacto</h1>}
         <RowContainer margin="3rem 0 0 0" id="contacts-list">
 
 

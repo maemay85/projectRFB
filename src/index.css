@@ -125,9 +125,10 @@ a#site-title:hover {
 
 #nav-language-toggle {
   position: absolute;
-  width: 18%;
+  width: 20%;
   top: 0;
   left: 75%;
+
 }
 
 .selected {
@@ -140,6 +141,7 @@ a#site-title:hover {
 
 #language-icon {
   height: 1.5rem;
+  margin-right: .2rem;
 }
 
 .title {

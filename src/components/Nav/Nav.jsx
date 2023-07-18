@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { TopNav } from '../styled-components/Containers';
+import {PropTypes} from 'prop-types';
 
+function Nav(props) {
 
-function Nav() {
-
+  const handleLanguageChange = props.handleLanguageChange;
+  const language = props.language;
 
   return (
     <>
@@ -22,13 +24,13 @@ function Nav() {
         </Link>
 
         <div id="nav-link-wrapper" className='row'>
-          <Link to={'/tenantresources'}>RESOURCES</Link>
+          <Link to={'/tenantresources'}>{language === 'english' ? 'RESOURCES' : 'RECURSOS'}</Link>
 
-          <Link to={'/about'}>ABOUT</Link>
+          <Link to={'/about'}>{language === 'english' ? 'ABOUT' : 'ACERCA'}</Link>
 
           <Link to={'/blog'}>BLOG</Link>
 
-          <Link to={'/contact'}>CONTACT</Link>
+          <Link to={'/contact'}>{language === 'english' ? 'CONTACT' : 'CONTACTOS'}</Link>
 
           <img src="src/assets/search.svg" id="search-icon"/>
         </div>
@@ -37,14 +39,19 @@ function Nav() {
           <span>
             <img src="src/assets/language.svg" id="language-icon"/>
           </span>
-          <span className='selected'>ENGLISH</span>
-          <span> ESPAÑOL</span>
+          <span className={language==='english'? 'selected' : null} onClick={(e) => handleLanguageChange(e)}>ENGLISH</span>|
+          <span className={language==='español'? 'selected' : null} onClick={(e) => handleLanguageChange(e)}>ESPAÑOL</span>
         </div>
 
       </TopNav>
 
     </>
   )
+}
+
+Nav.propTypes = {
+  handleLanguageChange: PropTypes.func,
+  language: PropTypes.string
 }
 
 export default Nav

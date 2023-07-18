@@ -5,21 +5,27 @@ import TenantResources from "./components/TenantResources"
 import Contact from "./components/Contact"
 import EmailContactForm from "./components/EmailContactForm"
 import Blog from "./components/Blog/Blog"
+import { PropTypes } from 'prop-types'
 
-const AppRoutes = () => {
+const AppRoutes = (props) => {
+  const language = props.language;
   return (
     <div id='router'>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/tenantresources' element={<TenantResources />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/email' element={<EmailContactForm />} />
-        <Route path='*' element={<Home />} />
+        <Route path='/' element={<Home language={language}/>} />
+        <Route path='/about' element={<About language={language}/>} />
+        <Route path='/tenantresources' element={<TenantResources language={language}/>} />
+        <Route path='/contact' element={<Contact language={language}/>} />
+        <Route path='/blog' element={<Blog language={language}/>} />
+        <Route path='/email' element={<EmailContactForm language={language}/>} />
+        <Route path='*' element={<Home language={language}/>} />
       </Routes>
     </div>
   )
+}
+
+AppRoutes.propTypes = {
+  language: PropTypes.string
 }
 
 export default AppRoutes
