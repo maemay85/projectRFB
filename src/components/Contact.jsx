@@ -39,4 +39,8 @@ function Contact(props) {
   )
 }
 
+Contact.propTypes = {
+  language: PropTypes.string
+}
+
 export default Contact

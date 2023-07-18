@@ -12,13 +12,13 @@ const AppRoutes = (props) => {
   return (
     <div id='router'>
       <Routes>
-        <Route path='/' element={<Home language={language}/>} />
+        <Route path='/' element={<About language={language}/>} />
         <Route path='/about' element={<About language={language}/>} />
         <Route path='/tenantresources' element={<TenantResources language={language}/>} />
         <Route path='/contact' element={<Contact language={language}/>} />
         <Route path='/blog' element={<Blog language={language}/>} />
         <Route path='/email' element={<EmailContactForm language={language}/>} />
-        <Route path='*' element={<Home language={language}/>} />
+        <Route path='*' element={<About language={language}/>} />
       </Routes>
     </div>
   )
