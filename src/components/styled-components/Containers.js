@@ -57,8 +57,8 @@ export const TopNav = styled.div`
   justify-content: space-between;
   position: absolute;
   background-color: var(--three);
-  top: 1%;
-  left: 10%;
+  top: 7%;
+  left: 15%;
   flex-direction: row;
   border: ${(props) =>
     props.border ? `1px solid rgba(150, 150, 150, 0.5)` : null};

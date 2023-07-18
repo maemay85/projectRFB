@@ -1,4 +1,4 @@
-import { ColumnContainer, RowContainer } from "./styled-components/Containers"
+import { ColumnContainer } from "./styled-components/Containers"
 import ResourceCard from "./styled-components/ResourceCard"
 
 
@@ -30,7 +30,7 @@ const TenantResources = () => {
 
   return (
     <>
-      <ColumnContainer width='100vw'>
+      <ColumnContainer margin='10rem 0 0 0' width='100vw'>
         {tenantResources.map((resource)=>{
           return (
             <ResourceCard

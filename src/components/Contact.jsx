@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <ColumnContainer id="contact" width="95vw">
+      <ColumnContainer margin='10rem 0 0 0' id="contact" width="95vw">
 
           <h1>Get in touch</h1>
         <RowContainer margin="3rem 0 0 0" id="contacts-list">

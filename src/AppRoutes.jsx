@@ -4,6 +4,7 @@ import About from "./components/About/About"
 import TenantResources from "./components/TenantResources"
 import Contact from "./components/Contact"
 import EmailContactForm from "./components/EmailContactForm"
+import Blog from "./components/Blog/Blog"
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path='/about' element={<About />} />
         <Route path='/tenantresources' element={<TenantResources />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='/email' element={<EmailContactForm />} />
         <Route path='*' element={<Home />} />
       </Routes>

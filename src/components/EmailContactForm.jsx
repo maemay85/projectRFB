@@ -2,6 +2,7 @@ import { useRef } from "react"
 import emailjs from "emailjs-com";
 import { StyledLink } from "./styled-components/StyledLink";
 import { Link } from "react-router-dom";
+import { ColumnContainer } from "./styled-components/Containers";
 
 
 const EmailContactForm = () => {
@@ -22,6 +23,7 @@ const EmailContactForm = () => {
 
   return (
     <>
+    <ColumnContainer id="email-form" margin="10rem 0 0 0">
       <form ref={form} onSubmit={sendEmail}>
         <label>Send me an email, please and thank you: </label>
         <input type="text" placeholder="Name" name="name" />
@@ -36,6 +38,7 @@ const EmailContactForm = () => {
       <StyledLink>
         <Link to={'/contact'}>back to contact</Link>
       </StyledLink>
+    </ColumnContainer>
     </>
   )
 

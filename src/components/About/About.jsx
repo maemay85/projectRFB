@@ -7,7 +7,7 @@ function About() {
 
   return (
     <>
-      <ColumnContainer padding='0 10rem' position='absolute'>
+      <ColumnContainer margin='10rem 0 0 0' padding='0 10rem' position='absolute'>
             <h1>About Reuben</h1>
 
             <p>Hi I'm Reuben!</p>
