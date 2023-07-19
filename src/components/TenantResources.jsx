@@ -1,4 +1,4 @@
-import { ColumnContainer } from "./styled-components/Containers"
+import { ColumnContainer, ImgContainer } from "./styled-components/Containers"
 import ResourceCard from "./styled-components/ResourceCard"
 import { PropTypes } from 'prop-types'
 
@@ -53,8 +53,21 @@ const TenantResources = (props) => {
 
   return (
     <>
-      <ColumnContainer margin='10rem 0 0 0' width='100vw'>
-        {language === 'english' ?
+      <ColumnContainer id="tenant-resources-content" margin='10rem 0 0 0' width='100vw'>
+        <ImgContainer id="city-background" left="-2%">
+          <img src="src/assets/beautiful-view-city-buildings_duotone 1.png" />
+        </ImgContainer>
+        <div id="tenant-resources-heading-wrapper">
+          <h1>HOUSING FOR PEOPLE, <br/>
+          NOT FOR PROFIT.</h1>
+          <div className="page-description-container column">
+            <h2>EXPLORE RESOURCES</h2>
+            <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
+        </div>
+        </div>
+
+        <ColumnContainer id="tenant-resources-cards" position="absolute" top="100%" left="50%">
+        {/* {language === 'english' ?
           tenantResources.english.map((resource)=>{
             return (
               <ResourceCard
@@ -78,7 +91,7 @@ const TenantResources = (props) => {
             )
           })
 
-        }
+        } */}</ ColumnContainer>
       </ColumnContainer>
     </>
   )

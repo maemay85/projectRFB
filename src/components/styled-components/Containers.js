@@ -22,6 +22,8 @@ export const ColumnContainer = styled.div`
   align-items: ${(props) => (props.align ? props.align : "center")};
   justify-content: space-between;
   position: ${(props) => (props.position ? props.position : "relative")};
+  top: ${(props) => (props.top ? props.top : 0)};
+  left: ${(props) => (props.left ? props.left : 0)};
   flex-direction: column;
   border: ${(props) =>
     props.border ? `1px solid rgba(150, 150, 150, 0.5)` : null};
@@ -67,4 +69,12 @@ export const TopNav = styled.div`
   width: ${(props) => (props.width ? props.width : "auto")};
   height: ${(props) => (props.height ? props.height : "auto")};
   z-index: 4;
+`;
+
+export const ImgContainer = styled.div`
+  width: 100vw;
+  position: absolute;
+  top: ${(props) => (props.top ? props.top : 0)};
+  left: ${(props) => (props.left ? props.left : 0)};
+  z-index: -1;
 `;

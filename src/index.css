@@ -2,7 +2,7 @@
   font-family: 'Noto Sans';
   line-height: 1.5;
   font-weight: 400;
-  font-size: 1.5vmin;
+
 
   --primary-background: #FAF8F4;
   --secondary-background: #F2F3E5;
@@ -33,7 +33,7 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-size: 2vmin;
+  font-size: 1.75vmin;
 }
 
 body {
@@ -68,6 +68,11 @@ a:hover {
   color: var(--dark-pop);
   text-decoration: underline;
   font-weight: 800;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a#site-title:hover {
@@ -156,6 +161,30 @@ a#site-title:hover {
   font-size: 1.8rem;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
+}
+
+.page-description-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 15rem -38vw 0 -38vw;
+  padding: 2rem;
+  width: 25rem;
+  border: .1rem solid var(--dark-text);
+  border-radius: 3rem;
+  background-color: var(--bright-pop);
+}
+
+#tenant-resources-heading-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 100%;
+  margin: 5rem -17vw;
+}
+
+#tenant-resources-heading-wrapper h1{
+  font-size: 8vw;
 }
 
 @media (prefers-color-scheme: light) {
