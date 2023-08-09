@@ -54,20 +54,21 @@ const TenantResources = (props) => {
   return (
     <>
       <ColumnContainer id="tenant-resources-content" margin='10rem 0 0 0' width='100vw'>
-        <ImgContainer id="city-background" left="-2%">
+      <div id="tenant-resources-heading-wrapper" className="column">
+
           <img src="src/assets/beautiful-view-city-buildings_duotone 1.png" />
-        </ImgContainer>
-        <div id="tenant-resources-heading-wrapper">
+
+
           <h1>HOUSING FOR PEOPLE, <br/>
           NOT FOR PROFIT.</h1>
           <div className="page-description-container column">
             <h2>EXPLORE RESOURCES</h2>
             <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
-        </div>
+          </div>
         </div>
 
-        <ColumnContainer id="tenant-resources-cards" position="absolute" top="100%" left="50%">
-        {/* {language === 'english' ?
+        <ColumnContainer id="tenant-resources-grid" margin="55rem 0 0 0" position="absolute" top="100%" left="50%">
+        { language === 'english' ?
           tenantResources.english.map((resource)=>{
             return (
               <ResourceCard
@@ -91,7 +92,7 @@ const TenantResources = (props) => {
             )
           })
 
-        } */}</ ColumnContainer>
+         }</ ColumnContainer>
       </ColumnContainer>
     </>
   )

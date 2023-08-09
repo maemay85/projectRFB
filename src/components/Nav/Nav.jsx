@@ -11,7 +11,7 @@ function Nav(props) {
     <>
       <TopNav width='80vw' id='top-nav'>
 
-        <Link to={'/'} id="site-title" className="title">
+        <Link to={'/'} id="site-title" className='row'>
           <div id="site-logo" className='column'>
             <div className='grayline'></div>
             <div className='grayline'></div>
@@ -20,7 +20,7 @@ function Nav(props) {
             <div className='grayline'></div>
             <div className='grayline'></div>
           </div>
-          <div id="site-title-text-wrapper" className='column'>Law Firm of<br/>Reuben Fuller-Bennett</div>
+          <div id="site-title-text" className='column'>Law Firm of<br/>Reuben Fuller-Bennett</div>
         </Link>
 
         <div id="nav-link-wrapper" className='row'>

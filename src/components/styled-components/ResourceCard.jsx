@@ -43,10 +43,10 @@ const ResourceCard = (props) => {
 }
 
 ResourceCard.propTypes = {
-  text: PropTypes.text,
-  url: PropTypes.url,
-  tagline: PropTypes.tagline,
-  imageUrl: PropTypes.imageUrl
+  text: PropTypes.string,
+  url: PropTypes.string,
+  tagline: PropTypes.string,
+  imageUrl: PropTypes.string
 }
 
 export default ResourceCard

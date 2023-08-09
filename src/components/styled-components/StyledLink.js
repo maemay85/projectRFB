@@ -14,7 +14,7 @@ export const StyledLink = styled.div`
 
   }
 `;
-
+/* NOT IN USE
 export const ContactStyledLink = styled.div`
   & {
     position: relative;
@@ -33,4 +33,4 @@ export const ContactStyledLink = styled.div`
   }
 
 `;
-
+*/

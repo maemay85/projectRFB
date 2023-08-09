@@ -1,3 +1,25 @@
+/*
+THIS FILE IS ORGANIZED AS FOLLOWS:
+
+ELEMENTS
+
+CLASSES:
+
+  Containers
+  Wrappers
+  Modified Elements
+
+IDS:
+
+  NOTE - LIST FILE WHERE USED IN A COMMENT
+
+  Containers
+  Wrappers
+  Modified Elements
+*/
+
+/* ELEMENTS */
+
 :root {
   font-family: 'Noto Sans';
   line-height: 1.5;
@@ -75,11 +97,68 @@ img {
   height: auto;
 }
 
+/* IDs */
+
+/* Nav.jsx */
+#nav-link-wrapper {
+  position: absolute;
+  width: 50%;
+  top: 100%;
+  left: 45%;
+}
+
+#nav-language-toggle {
+  position: absolute;
+  width: 20%;
+  top: 0;
+  left: 75%;
+}
+
+#site-title {
+  margin-left: -5vw;
+}
+
 a#site-title:hover {
   text-decoration: none;
   color: var(--light-text);
   font-weight: 800;
 }
+
+#site-logo {
+  position: relative;
+  height: 3.6rem;
+}
+
+#site-title-text {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  margin-left: .5rem;
+}
+
+#search-icon {
+  height: 1.5rem;
+}
+
+#language-icon {
+  height: 1.5rem;
+}
+
+#tenant-resources-heading-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 30vh;
+  margin: 0 -1rem 0 -2rem;
+}
+
+#tenant-resources-heading-wrapper h1{
+  margin: -50vw 0 0 0;
+  font-size: 8vw;
+}
+
+/* CLASSES */
 
 .column {
   display: flex;
@@ -95,19 +174,6 @@ a#site-title:hover {
   justify-content: space-between;
 }
 
-#site-logo {
-  position: absolute;
-  top: 50%;
-  left: -3.5%;
-  height: 3.6rem;
-  margin: -1.7rem 0;
-}
-
-#site-title-text-wrapper {
-  line-height: 2.2rem;
-  font-weight: 700;
-}
-
 .redline, .grayline {
   height: .35rem;
   width: 1.5rem;
@@ -121,32 +187,24 @@ a#site-title:hover {
   background-color: var(--light-text);
 }
 
-#nav-link-wrapper {
-  position: absolute;
-  width: 50%;
-  top: 100%;
-  left: 45%;
+.contact-link {
+  position: relative;
+    font-size: 1.5rem;
+    border: solid 1px rgba(50, 50, 50, 0.5);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    width: fit-content;
+    z-index: 2;
 }
 
-#nav-language-toggle {
-  position: absolute;
-  width: 20%;
-  top: 0;
-  left: 75%;
-
+.contact-link:hover {
+  box-shadow: 0 0 1px 1px #200;
 }
 
 .selected {
   font-weight: 800;
-}
-
-#search-icon {
-  height: 1.5rem;
-}
-
-#language-icon {
-  height: 1.5rem;
-  margin-right: .2rem;
 }
 
 .title {
@@ -164,27 +222,21 @@ a#site-title:hover {
 }
 
 .page-description-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 15rem -38vw 0 -38vw;
-  padding: 2rem;
-  width: 25rem;
   border: .1rem solid var(--dark-text);
   border-radius: 3rem;
   background-color: var(--bright-pop);
+  width: 35vw;
+  padding: 2rem;
+  margin: 20vw 0 0 0;
 }
 
-#tenant-resources-heading-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  width: 100%;
-  margin: 5rem -17vw;
+.page-description-container h2 {
+  font-size: 3vw;
 }
 
-#tenant-resources-heading-wrapper h1{
-  font-size: 8vw;
+.page-description-container p {
+  font-size: 2vw;
+  margin-top: -1vw;
 }
 
 @media (prefers-color-scheme: light) {
