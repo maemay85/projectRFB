@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { TopNav } from '../styled-components/Containers';
 import {PropTypes} from 'prop-types';
 
 function Nav(props) {
@@ -9,7 +8,7 @@ function Nav(props) {
 
   return (
     <>
-      <TopNav width='80vw' id='top-nav'>
+      <div id='top-nav-container'>
 
         <Link to={'/'} id="site-title" className='row'>
           <div id="site-logo" className='column'>
@@ -24,7 +23,7 @@ function Nav(props) {
         </Link>
 
         <div id="nav-link-wrapper" className='row'>
-          <Link to={'/tenantresources'}>{language === 'english' ? 'RESOURCES' : 'RECURSOS'}</Link>
+          <Link to={'/resources'}>{language === 'english' ? 'RESOURCES' : 'RECURSOS'}</Link>
 
           <Link to={'/about'}>{language === 'english' ? 'ABOUT' : 'ACERCA'}</Link>
 
@@ -43,7 +42,7 @@ function Nav(props) {
           <span className={language==='español'? 'selected' : null} onClick={(e) => handleLanguageChange(e)}>ESPAÑOL</span>
         </div>
 
-      </TopNav>
+      </div>
 
     </>
   )

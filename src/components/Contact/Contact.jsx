@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom'
-import { ColumnContainer, RowContainer } from './styled-components/Containers'
 import { PropTypes } from 'prop-types'
 
 
@@ -10,10 +9,10 @@ function Contact(props) {
 
   return (
     <>
-      <ColumnContainer margin='10rem 0 0 0' id="contact" width="95vw">
+      <div className="column" id="contact-page-container">
 
           {language === 'english' ? <h1>Get in touch</h1> : <h1>Ponerse en contacto</h1>}
-        <RowContainer margin="3rem 0 0 0" id="contacts-list">
+        <div className='row' id="contact-list-container">
 
 
           <div className="contact-link">
@@ -30,10 +29,8 @@ function Contact(props) {
               </a>
             </div>
 
-
-
-        </RowContainer>
-      </ ColumnContainer>
+        </div>
+      </div>
     </>
   )
 }

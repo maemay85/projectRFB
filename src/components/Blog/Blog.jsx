@@ -1,5 +1,3 @@
-
-import { ColumnContainer } from '../styled-components/Containers'
 import { PropTypes } from 'prop-types'
 
 function Blog(props) {
@@ -7,7 +5,7 @@ const language = props.language
 
   return (
     <>
-      <ColumnContainer margin='10rem 0 0 0' padding='0 10rem' position='absolute'>
+      <div id="blog-page-container" className='column'>
 
             {language==='english' ?
               <div id="blog-content-english">
@@ -20,7 +18,7 @@ const language = props.language
               </div>}
 
 
-        </ColumnContainer>
+        </div>
     </>
   )
 }

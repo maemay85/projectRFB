@@ -1,13 +1,12 @@
-import { ColumnContainer, ImgContainer } from "./styled-components/Containers"
-import ResourceCard from "./styled-components/ResourceCard"
+import ResourceCard from "./ResourceCard"
 import { PropTypes } from 'prop-types'
 
 
-const TenantResources = (props) => {
+const Resources = (props) => {
 
   const language = props.language;
 
-  const tenantResources =
+  const resources =
     {
       english: [
         {
@@ -53,8 +52,8 @@ const TenantResources = (props) => {
 
   return (
     <>
-      <ColumnContainer id="tenant-resources-content" margin='10rem 0 0 0' width='100vw'>
-      <div id="tenant-resources-heading-wrapper" className="column">
+      <div id="resources-page-container" className="column">
+      <div id="resources-heading-wrapper" className="column">
 
           <img src="src/assets/beautiful-view-city-buildings_duotone 1.png" />
 
@@ -67,9 +66,9 @@ const TenantResources = (props) => {
           </div>
         </div>
 
-        <ColumnContainer id="tenant-resources-grid" margin="55rem 0 0 0" position="absolute" top="100%" left="50%">
+        <div id="resources-grid-container" className="column">
         { language === 'english' ?
-          tenantResources.english.map((resource)=>{
+          resources.english.map((resource)=>{
             return (
               <ResourceCard
                 key={resource.title}
@@ -80,7 +79,7 @@ const TenantResources = (props) => {
               />
             )
           }) :
-          tenantResources.español.map((resource)=>{
+          resources.español.map((resource)=>{
             return (
               <ResourceCard
                 key={resource.title}
@@ -92,14 +91,14 @@ const TenantResources = (props) => {
             )
           })
 
-         }</ ColumnContainer>
-      </ColumnContainer>
+         }</div>
+      </div>
     </>
   )
 }
 
-TenantResources.propTypes = {
+Resources.propTypes = {
   language: PropTypes.string
 }
 
-export default TenantResources
+export default Resources
