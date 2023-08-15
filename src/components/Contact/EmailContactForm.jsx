@@ -1,6 +1,5 @@
 import { useRef } from "react"
 import emailjs from "emailjs-com";
-import { Link } from "react-router-dom";
 
 
 const EmailContactForm = () => {
@@ -21,22 +20,17 @@ const EmailContactForm = () => {
 
   return (
     <>
-    <div id="email-form" className="column">
       <form ref={form} onSubmit={sendEmail}>
-        <label>Send me an email, please and thank you: </label>
-        <input type="text" placeholder="Name" name="name" />
-
+        <div className="email-form-field">
+          <label>First Name</label>
+          <input type="text" placeholder="Name" name="name" />
+        </div>
+        <div className="email-form-field">
+        <label>Email</label>
         <input type="email" placeholder="Email" name="email" />
-
-        <input type="text" placeholder="Subject" name="subject" />
-
-        <textarea placeholder="Message" name="message" />
-        <input type="submit" value="Send" className="submit" />
+        </div>
+        <input type="submit" value="Sign Me Up" className="submit" />
       </form>
-      <div id="form-back-button">
-        <Link to={'/contact'}>back to contact</Link>
-      </div>
-    </div>
     </>
   )
 

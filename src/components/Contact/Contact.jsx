@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom'
 import { PropTypes } from 'prop-types'
+import EmailContactForm from './EmailContactForm';
 
 
 function Contact(props) {
@@ -9,9 +10,22 @@ function Contact(props) {
 
   return (
     <>
-      <div className="column" id="contact-page-container">
+      <div id="contact-page-container">
 
-          {language === 'english' ? <h1>Get in touch</h1> : <h1>Ponerse en contacto</h1>}
+          {language === 'english' ?
+            <div id="contact-page-header">
+              <h1>LET'S CONNECT</h1>
+              <p>Get the latest resources, events, and stories delivered to your inbox each month. Join our community newsletter.</p>
+            </div>
+            :
+            <div id="contact-page-header">
+              <h1>PONERSE EN CONTACTO</h1>
+              <p>Reciba los últimos recursos, eventos e historias en su bandeja de entrada cada mes. Únase a nuestro boletín comunitario.</p>
+            </div>
+          }
+        <div id="email-form-container">
+          <EmailContactForm />
+        </div>
         <div className='row' id="contact-list-container">
 
 

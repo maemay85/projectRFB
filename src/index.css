@@ -28,6 +28,7 @@ IDS:
 
   --primary-background: #FAF8F4;
   --secondary-background: #F2F3E5;
+  --color-background: rgba(184, 144, 180, 0.74);
   --bright-pop: #E9F88D;
   --dark-pop: #8A3683;
   --dark-text: #000000;
@@ -239,18 +240,37 @@ a#site-title:hover {
 }
 
 #contact-page-container {
-  margin: 0 0 0 0;
-  width: 95vw;
+  margin: 0 0 0 -2rem;
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   position: relative;
+  background-color: var(--color-background);
+}
+
+#contact-page-header h1 {
+  color: var(--secondary-background);
+}
+
+#contact-page-header {
+
+  color: var(--secondary-background);
 }
 
 #contact-list-container {
   margin: 3rem 0 0 0;
 }
 
-#email-form {
-  margin: 10rem 0 0 0
+#email-form-container {
+  border: 1px solid red;
+  margin: 0 0 0 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+}
+
+#email-form-field {
+  position: relative;
 }
 
 #blog-page-container {
