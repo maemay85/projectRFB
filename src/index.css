@@ -172,16 +172,14 @@ a#site-title:hover {
 }
 
 #resources-page-container {
-  margin: 10rem 0 0 0;
-  width: 100vw;
+  margin: 8rem 0 0 -1rem;
+  width: 98vw;
+
 }
 
 #resources-heading-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 0%;
   width: 100%;
-  height: 30vh;
+  height: auto;
   margin: 0 -1rem 0 -2rem;
 }
 
@@ -191,10 +189,12 @@ a#site-title:hover {
 }
 
 #resources-grid-container {
-  margin: 55rem 0 0 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
+  margin: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
 }
 
 #contact-page-container {
@@ -268,27 +268,32 @@ a#site-title:hover {
   font-weight: 800;
 }
 
-.title {
+.title, .subtitle {
 
-  font-size: 2rem;
+
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .subtitle {
-
-  font-size: 1.8rem;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 500;
+  margin: 1rem 0;
+  font-size: .8rem;
+  font-weight: 700;
 }
 
 .page-description-container {
   border: .1rem solid var(--dark-text);
   border-radius: 3rem;
   background-color: var(--bright-pop);
-  width: 35vw;
-  padding: 2rem;
+  width: 40vw;
+  padding: 2rem 7rem;
   margin: 20vw 0 0 0;
+  text-align: center;
 }
 
 .page-description-container h2 {
@@ -302,20 +307,19 @@ a#site-title:hover {
 
 .resource-container {
   position: relative;
-    border: solid 1px rgba(150, 150, 150, 0.5);
     border-radius: 1rem;
     padding: 0.5rem;
     margin: 2rem;
-    width: 20rem;
     color: #ccc;
     display: flex;
-    align-items: center;
+    width: 20vw;
+    align-items: left;
     flex-direction: column;
     justify-content: center;
 }
 
 .resource-container:hover {
-  box-shadow: 0 0 1px 1px #ccc;
+  box-shadow: .1rem 0 .5rem .1rem var(--light-text);
 }
 
 @media (prefers-color-scheme: light) {

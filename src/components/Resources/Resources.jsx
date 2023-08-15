@@ -10,42 +10,84 @@ const Resources = (props) => {
     {
       english: [
         {
-          title: 'resource one',
-          tagline: 'A brief description of this resource for tenants',
+          title: 'Resource One',
+          category: 'CATEGORY',
           url: 'url of the resource',
-          imageUrl: 'image url for the resource'
+          imageUrl: 'src/assets/Resource 1.png'
         },
 
         {
-          title: 'resource two',
-          tagline: 'A brief description of this resource for tenants',
+          title: 'Resource Two',
+          category: 'CATEGORY',
           url: 'url of the resource',
-          imageUrl: 'image url for the resource'
+          imageUrl: 'src/assets/Resource 2.png'
         },
         {
-          title: 'resource three',
-          tagline: 'A brief description of this resource for tenants',
+          title: 'Resource Three',
+          category: 'CATEGORY',
           url: 'url of the resource',
-          imageUrl: 'image url for the resource'
+          imageUrl: 'src/assets/Resource 3.png'
+        },
+
+        {
+          title: 'Resource Four',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 4.png'
+        },
+
+        {
+          title: 'Resource Five',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 5.png'
+        },
+
+        {
+          title: 'Resource Six',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 6.png'
+        },
+
+        {
+          title: 'Resource Seven',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 7.png'
+        },
+
+        {
+          title: 'Resource Eight',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 8.png'
+        },
+
+        {
+          title: 'Resource Nine',
+          category: 'CATEGORY',
+          url: 'url of the resource',
+          imageUrl: 'src/assets/Resource 9.png'
         }],
 
         español: [
           {
             title: 'recurso uno',
-            tagline: 'Una breve descripción de este recurso para inquilinos',
+            category: 'CATEGORÍA',
             url: 'url del recurso',
-            imageUrl: 'url de imagen para el recurso'
+            imageUrl: 'src/assets/Resource 1.png'
           },
           {
-            title: 'Una breve descripción de este recurso para inquilinos',
-            tagline: 'url del recurso',
-            imageUrl: 'url de imagen para el recurso'
+            title: 'CATEGORÍA',
+            category: 'url del recurso',
+            imageUrl: 'src/assets/Resource 2.png'
           },
           {
             title: 'recurso tres',
-            tagline: 'Una breve descripción de este recurso para inquilinos',
+            category: 'CATEGORÍA',
             url: 'url del recurso',
-            imageUrl: 'url de imagen para el recurso'
+            imageUrl: 'src/assets/Resource 3.png'
           }
         ]
     }
@@ -66,7 +108,7 @@ const Resources = (props) => {
           </div>
         </div>
 
-        <div id="resources-grid-container" className="column">
+        <div id="resources-grid-container">
         { language === 'english' ?
           resources.english.map((resource)=>{
             return (
@@ -74,7 +116,7 @@ const Resources = (props) => {
                 key={resource.title}
                 text={resource.title}
                 url={resource.url}
-                tagline={resource.tagline}
+                category={resource.category}
                 imageUrl={resource.imageUrl}
               />
             )
@@ -85,7 +127,7 @@ const Resources = (props) => {
                 key={resource.title}
                 text={resource.title}
                 url={resource.url}
-                tagline={resource.tagline}
+                category={resource.category}
                 imageUrl={resource.imageUrl}
               />
             )

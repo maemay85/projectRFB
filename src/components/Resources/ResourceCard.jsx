@@ -5,18 +5,18 @@ import { PropTypes } from 'prop-types'
 const ResourceCard = (props) => {
   const text = props.text;
   const url = props.url;
-  const tagline = props.tagline;
-  const imageUrl = props.imageUrl
+  const category = props.category;
+  const imageUrl = props.imageUrl;
   return (
     <>
       <a href={url} target='_blank' rel='noreferrer'>
         <div className="resource-container">
-          <h1>{text}</h1>
+
           <div className="image-container">
             <img src={imageUrl} />
           </div>
-          <p>{tagline}</p>
-
+          <div className='subtitle'>{category}</div>
+          <div className='title'>{text}</div>
         </div>
       </a>
     </>
@@ -26,7 +26,7 @@ const ResourceCard = (props) => {
 ResourceCard.propTypes = {
   text: PropTypes.string,
   url: PropTypes.string,
-  tagline: PropTypes.string,
+  category: PropTypes.string,
   imageUrl: PropTypes.string
 }
 
