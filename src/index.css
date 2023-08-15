@@ -55,7 +55,7 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-size: 1.75vmin;
+  font-size: 1.25vw;
 }
 
 body {
@@ -109,23 +109,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: relative;
   background-color: var(--three);
-  top: 7%;
-  left: 15%;
   flex-direction: row;
-  margin: 0;
+  margin: 2rem 0 0 1rem;
   padding: 0;
-  width: 80vw;
+  width: 96vw;
   height: auto;
   z-index: 4;
 }
 
 #nav-link-wrapper {
-  position: absolute;
-  width: 50%;
-  top: 100%;
-  left: 45%;
+  position: relative;
+  width: 25rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
 }
 
 #nav-language-toggle {
@@ -133,10 +131,11 @@ img {
   width: 20%;
   top: 0;
   left: 75%;
+  cursor: pointer;
 }
 
 #site-title {
-  margin-left: -5vw;
+  margin-left: 1rem;
 }
 
 a#site-title:hover {
@@ -148,6 +147,7 @@ a#site-title:hover {
 #site-logo {
   position: relative;
   height: 3.6rem;
+  margin-top: .5rem;
 }
 
 #site-title-text {
@@ -166,14 +166,55 @@ a#site-title:hover {
 }
 
 #about-page-container {
-  margin: 10rem 0 0 0;
-  padding: 0 10rem;
-  position: absolute;
+  margin: 0 0 0 -1rem;
+  position: relative;
+
+  height: 115vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 98vw;
 }
 
+#about-page-background-image {
+
+  position: absolute;
+  z-index: -1;
+}
+
+#about-page-content-container {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -44vw;
+  margin-top: -40vh;
+  width: 80vw;
+  height: 80vh;
+  background-color: var(--primary-background);
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#about-page-text-wrapper {
+  text-align: justify;
+  width: 50%;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+}
+
+
+#about-page-headshot-image {
+  position: relative;
+}
 #resources-page-container {
-  margin: 8rem 0 0 -1rem;
-  width: 98vw;
+  margin: 0 0 0 -1rem;
+  width: 99vw;
 
 }
 
@@ -198,7 +239,7 @@ a#site-title:hover {
 }
 
 #contact-page-container {
-  margin: 10rem 0 0 0;
+  margin: 0 0 0 0;
   width: 95vw;
   padding: 0;
   position: relative;
@@ -213,9 +254,10 @@ a#site-title:hover {
 }
 
 #blog-page-container {
-  margin: 10rem 0 0 0;
+  margin: 0 0 0 -1rem;
   padding: 0 10rem;
   text-align: center;
+  width: 73vw;
 }
 
 /* CLASSES */

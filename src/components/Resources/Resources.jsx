@@ -97,16 +97,16 @@ const Resources = (props) => {
       <div id="resources-page-container" className="column">
       <div id="resources-heading-wrapper" className="column">
 
-          <img src="src/assets/beautiful-view-city-buildings_duotone 1.png" />
+        <img src="src/assets/beautiful-view-city-buildings_duotone 1.png" />
 
 
-          <h1>HOUSING FOR PEOPLE, <br/>
-          NOT FOR PROFIT.</h1>
-          <div className="page-description-container column">
-            <h2>EXPLORE RESOURCES</h2>
-            <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
-          </div>
+        <h1>HOUSING FOR PEOPLE, <br/>
+        NOT FOR PROFIT.</h1>
+        <div className="page-description-container column">
+          <h2>EXPLORE RESOURCES</h2>
+          <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
         </div>
+      </div>
 
         <div id="resources-grid-container">
         { language === 'english' ?
