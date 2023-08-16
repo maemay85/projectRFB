@@ -23,11 +23,11 @@ const EmailContactForm = () => {
       <form ref={form} onSubmit={sendEmail}>
         <div className="email-form-field">
           <label>First Name</label>
-          <input type="text" placeholder="Name" name="name" />
+          <input type="text" name="name" />
         </div>
         <div className="email-form-field">
         <label>Email</label>
-        <input type="email" placeholder="Email" name="email" />
+        <input type="email"  name="email" />
         </div>
         <input type="submit" value="Sign Me Up" className="submit" />
       </form>

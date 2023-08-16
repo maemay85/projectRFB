@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import ResourceCard from "./ResourceCard"
 import { PropTypes } from 'prop-types'
 
@@ -135,6 +136,7 @@ const Resources = (props) => {
 
          }</div>
       </div>
+      <Contact language={language} />
     </>
   )
 }

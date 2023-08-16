@@ -1,4 +1,5 @@
 import { PropTypes } from 'prop-types'
+import Contact from '../Contact/Contact'
 
 function About(props) {
 const language = props.language
@@ -29,8 +30,9 @@ const language = props.language
               </>}
             </div>
         </div>
-      </div>
 
+      </div>
+    <Contact language={language} />
     </>
   )
 }

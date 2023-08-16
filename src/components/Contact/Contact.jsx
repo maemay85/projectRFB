@@ -27,22 +27,36 @@ function Contact(props) {
           <EmailContactForm />
         </div>
         <div className='row' id="contact-list-container">
+            <div className='contact-list-category-wrapper'>
+              <h3>About</h3>
+              <Link to="/about">About</Link>
+            </div>
+            <div className='contact-list-category-wrapper'>
+              <h3>Explore</h3>
+              <div><Link to="/resources">Resource</Link></div>
+              <div><Link to="/blog">Blog</Link></div>
+            </div>
+            <div className='contact-list-category-wrapper'>
+              <h3>Connect</h3>
+              <div><Link to="/Contact">Contact</Link></div>
+              <div><p>Follow us</p>
+              <div id="contact-social-wrapper" className='row'>
+              <img src="src/assets/🦆 icon _facebook_.svg" />
+              <img src="src/assets/🦆 icon _instagram-alt_.svg" />
+              <img src="src/assets/🦆 icon _twitter_.svg" />
+
+            </div></div>
+            </div>
 
 
-          <div className="contact-link">
-              <Link to={'/email'}>Email</Link>
-            </div>
-            <div className="contact-link">
-              <a href="https://www.linkedin.com/in/reuben-fuller-bennett-ab9a0031/" target='_blank' rel='noreferrer'>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg" width="50" />
-              </a>
-            </div>
-            <div className="contact-link">
-              <a href="https://www.instagram.com/reuben.esque/" target='_blank' rel='noreferrer'>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/CIS-A2K_Instagram_Icon_%28Pink%29.svg" width="50" />
-              </a>
-            </div>
 
+
+        </div>
+        <div id="footer">
+          <div>Privacy & Accessibility</div>
+          <div>Terms of use</div>
+          <div>Sitemap</div>
+          <div>Copyright 2023 RFB.</div>
         </div>
       </div>
     </>
