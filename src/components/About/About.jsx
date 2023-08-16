@@ -13,7 +13,7 @@ const language = props.language
           </div>
           <div id="about-page-content-container">
             <div id="about-page-headshot-image">
-            <img src="src/assets/headshot.png" />
+            <img src="https://github.com/maemay85/projectRFB/blob/main/src/assets/headshot.png" />
           </div>
           <div id="about-page-text-wrapper">
             {language==='english' ?
