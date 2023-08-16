@@ -41,9 +41,9 @@ function Contact(props) {
               <div><Link to="/Contact">Contact</Link></div>
               <div><p>Follow us</p>
               <div id="contact-social-wrapper" className='row'>
-              <img src="src/assets/🦆 icon _facebook_.svg" />
-              <img src="src/assets/🦆 icon _instagram-alt_.svg" />
-              <img src="src/assets/🦆 icon _twitter_.svg" />
+              <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/🦆 icon _facebook_.svg" />
+              <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/🦆 icon _instagram-alt_.svg" />
+              <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/🦆 icon _twitter_.svg" />
 
             </div></div>
             </div>

@@ -31,12 +31,12 @@ function Nav(props) {
 
           <Link to={'/contact'}>{language === 'english' ? 'CONTACT' : 'CONTACTOS'}</Link>
 
-          <img src="src/assets/search.svg" id="search-icon"/>
+          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/search.svg" id="search-icon"/>
         </div>
 
         <div id="nav-language-toggle" className='row'>
           <span>
-            <img src="src/assets/language.svg" id="language-icon"/>
+            <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/language.svg" id="language-icon"/>
           </span>
           <span className={language==='english'? 'selected' : null} onClick={(e) => handleLanguageChange(e)}>ENGLISH</span>|
           <span className={language==='español'? 'selected' : null} onClick={(e) => handleLanguageChange(e)}>ESPAÑOL</span>
