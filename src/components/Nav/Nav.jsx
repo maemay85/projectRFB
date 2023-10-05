@@ -27,11 +27,11 @@ function Nav(props) {
 
           <Link to={'/about'}>{language === 'english' ? 'ABOUT' : 'ACERCA'}</Link>
 
-          <Link to={'/blog'}>BLOG</Link>
+          {/* <Link to={'/blog'}>BLOG</Link> */}
 
           <Link to={'/contact'}>{language === 'english' ? 'CONTACT' : 'CONTACTOS'}</Link>
 
-          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/search.svg" id="search-icon"/>
+          {/* <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/search.svg" id="search-icon"/> */}
         </div>
 
         <div id="nav-language-toggle" className='row'>

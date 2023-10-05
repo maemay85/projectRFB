@@ -96,18 +96,32 @@ const Resources = (props) => {
   return (
     <>
       <div id="resources-page-container" className="column">
-      <div id="resources-heading-wrapper" className="column">
+      { language === 'english' ?
+        <div id="resources-heading-wrapper" className="column">
 
-        <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/beautiful-view-city-buildings_duotone 1.png" />
+          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/beautiful-view-city-buildings_duotone 1.png" />
 
 
-        <h1>HOUSING FOR PEOPLE, <br/>
-        NOT FOR PROFIT.</h1>
-        <div className="page-description-container column">
-          <h2>EXPLORE RESOURCES</h2>
-          <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
+          <h1>You have rights at home, but it’s up to you to enforce them. <br/>Reuben can help.</h1>
+          <div className="page-description-container column">
+            <h2>EXPLORE RESOURCES</h2>
+            <p>Here you will find resources, organizations and tools  to support you in understanding and advocating for your rights. </p>
+          </div>
         </div>
-      </div>
+        :
+        <div id="resources-heading-wrapper" className="column">
+
+          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/beautiful-view-city-buildings_duotone 1.png" />
+
+
+          <h1>Tienes derechos en casa, pero depende de ti hacerlos cumplir. <br/>Reuben puede ayudar.</h1>
+          <div className="page-description-container column">
+            <h2>EXPLORAR RECURSOS</h2>
+             <p>Aquí encontrará recursos, organizaciones y herramientas que le ayudarán a comprender y defender sus derechos. </p>
+          </div>
+        </div>
+      }
+
 
         <div id="resources-grid-container">
         { language === 'english' ?
