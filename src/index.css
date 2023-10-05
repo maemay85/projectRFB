@@ -306,7 +306,7 @@ a#site-title:hover {
 #contact-page-container {
   margin: 0 0 0 -2rem;
   width: 100vw;
-  height: 65vw;
+  height: 90vw;
   padding-top: 5rem;
   padding-left: 7rem;
   position: relative;
@@ -353,12 +353,20 @@ position: relative;
 width: 1.8rem;
 }
 
+#email-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  width: 80vw;
+}
+
 #email-form-container form {
   display: flex;
   flex-direction: row;
   width: 80vw;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   margin-top: -5rem;
 }
 
@@ -433,9 +441,13 @@ width: 1.8rem;
 }
 
 .contact-list-category-wrapper a, .contact-list-category-wrapper p {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 1.8rem;
   margin: 0;
+}
+
+.contact-list-category-wrapper a:hover {
+  text-decoration: underline;
 }
 
 .email-form-field {
@@ -443,6 +455,7 @@ width: 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-right: 2vw;
 }
 
 .email-form-field label {
@@ -451,19 +464,55 @@ width: 1.8rem;
   font-weight: 700;
 }
 
-.email-form-field input {
+.email-form-field input, .email-form-field select {
   border-radius: .5rem;
   border: 1px solid black;
-  height: 4rem;
-  width: 22rem;
+  height: 3.5rem;
+  width: 28vw;
   background-color: var(--secondary-background);
 }
 
+.email-form-field textarea {
+  border-radius: .5rem;
+  border: 1px solid black;
+  height: 10rem;
+  width: 28vw;
+  background-color: var(--secondary-background);
+  padding-left: 2vw;
+  padding-top: 1vw;
+  font-family: 'Noto Sans';
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+.email-form-field input:not([type=submit]):not([type=file]){
+  padding-left: 2vw;
+  font-family: 'Noto Sans';
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+.email-form-field select#subject {
+  font-size: 1.5vw;
+  text-align: left;
+  padding-left: 2vw;
+  margin-right: 2vw;
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  color: var(--light-text);
+}
+
+
+
 .submit {
+  margin-top: 3vw;
   background-color: var(--bright-pop);
   font-family: 'Noto Sans';
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   height: 4.5rem;
   width: 14rem;
   border-radius: 6.5rem;

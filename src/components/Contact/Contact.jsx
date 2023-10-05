@@ -23,9 +23,9 @@ function Contact(props) {
               <p>{"Para obtener más información o reservar una consulta gratuita, comuníquese con Reuben completando el formulario de contacto aquí, enviando un correo electrónico a reuben@rfblaw.nyc o llamando o enviando mensajes de texto al (347) 674-9380."}</p>
             </div>
           }
-        <div id="email-form-container">
+
           <EmailContactForm language={language} />
-        </div>
+
         <div className='row' id="contact-list-container">
             <div className='contact-list-category-wrapper'>
               {language === 'english' ?
@@ -49,7 +49,7 @@ function Contact(props) {
                   <h3>Connect</h3>
                   <div><Link to="/Contact">Contact</Link></div>
                   <div>
-                    <p>Follow us</p>
+                    <p>Follow us:</p>
                     <div id="contact-social-wrapper" className='row'>
                       <a href="https://facebook.com/reuben.fullerbennett">
                         <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/🦆 icon _facebook_.svg" />
@@ -68,7 +68,7 @@ function Contact(props) {
                   <h3>Connectar</h3>
                   <div><Link to="/Contact">Contactos</Link></div>
                   <div>
-                    <p>Síganos</p>
+                    <p>Síganos:</p>
                     <div id="contact-social-wrapper" className='row'>
                     <a href="https://facebook.com/reuben.fullerbennett">
                         <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/🦆 icon _facebook_.svg" />
@@ -95,7 +95,7 @@ function Contact(props) {
             <Link to={'/disclaimer'}>{language === 'english' ? 'Disclaimer' : 'Descargo de responsabilidad'}</Link>
           </div>
           {/* <div>Sitemap</div> */}
-          <div>{language === "english" ? "Copyright 2023 RFB." : "Derechos de Autor 2023 RFB."}</div>
+          <div>{language === "english" ? "Copyright 2023 RFB" : "Derechos de Autor 2023 RFB"}</div>
         </div>
       </div>
     </>
