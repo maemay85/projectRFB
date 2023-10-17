@@ -57,7 +57,7 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-size: 1.25vw;
+  font-size: .6vw;
 
 }
 
@@ -115,27 +115,45 @@ img {
   position: relative;
   background-color: var(--three);
   flex-direction: row;
-  margin: 2rem 0 0 1rem;
+  margin: 2vw 0 0 1vw;
   padding: 0;
-  width: 96vw;
-  height: auto;
+  width: 92vw;
+  height: 8.8125rem;
   z-index: 4;
+}
+
+#nav-right-side-container {
+  position: relative;
+  height: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
 }
 
 #nav-link-wrapper {
   position: relative;
-  width: 20vw;
-  margin-right: 4vw;
-  margin-top: 3rem;
+  width: 28vw;
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
+
 #nav-language-toggle {
-  position: absolute;
-  width: 20%;
-  top: 0;
-  left: 75%;
+  position: relative;
+  width: 10vw;
+  font-size: .85rem;
   cursor: pointer;
   color: var(--light-text);
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+  justify-content: space-between;
 }
 
 #site-title {
@@ -150,14 +168,14 @@ a#site-title:hover {
 
 #site-logo {
   position: relative;
-  height: 3.6rem;
+  height: 4vw;
   margin-top: .5rem;
 }
 
 #site-title-text {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
   margin-left: .5rem;
 }
 
@@ -418,7 +436,7 @@ width: 1.8rem;
 }
 
 .redline, .grayline {
-  height: .35rem;
+  height: .30rem;
   width: 1.5rem;
 }
 
