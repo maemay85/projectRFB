@@ -99,7 +99,8 @@ const Resources = (props) => {
       { language === 'english' ?
         <div id="resources-heading-wrapper" className="column">
 
-          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/beautiful-view-city-buildings_duotone 1.png" />
+          <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient map 1.png" />
+
 
 
           <h1>You have rights at home, but it’s up to you to enforce them. <br/>Reuben can help.</h1>

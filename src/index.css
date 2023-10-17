@@ -32,7 +32,8 @@ IDS:
   --bright-pop: #E9F88D;
   --dark-pop: #8A3683;
   --dark-text: #000000;
-  --light-text: #414042;
+  --medium-text: #414042;
+  --light-text: #979797;
   color: var(--dark-text);
   background-color: var(--primary-background);
 
@@ -84,7 +85,7 @@ h2 {
 
 a {
   font-weight: 500;
-  color: var(--light-text);
+  color: var(--medium-text);
   text-decoration: none;
 }
 
@@ -134,6 +135,7 @@ img {
   top: 0;
   left: 75%;
   cursor: pointer;
+  color: var(--light-text);
 }
 
 #site-title {
@@ -142,7 +144,7 @@ img {
 
 a#site-title:hover {
   text-decoration: none;
-  color: var(--light-text);
+  color: var(--medium-text);
   font-weight: 800;
 }
 
@@ -425,7 +427,7 @@ width: 1.8rem;
 }
 
 .grayline {
-  background-color: var(--light-text);
+  background-color: var(--medium-text);
 }
 
 .contact-list-category-wrapper {
@@ -502,7 +504,7 @@ width: 1.8rem;
   margin-right: 2vw;
   font-family: 'Noto Sans';
   font-weight: 600;
-  color: var(--light-text);
+  color: var(--medium-text);
 }
 
 
@@ -520,7 +522,7 @@ width: 1.8rem;
 }
 
 .submit:hover {
-  box-shadow: .1rem 0 .5rem .1rem var(--light-text);
+  box-shadow: .1rem 0 .5rem .1rem var(--medium-text);
 }
 
 .selected {
@@ -578,7 +580,7 @@ width: 1.8rem;
 }
 
 .resource-container:hover {
-  box-shadow: .1rem 0 .5rem .1rem var(--light-text);
+  box-shadow: .1rem 0 .5rem .1rem var(--medium-text);
 }
 
 .post-container {
@@ -614,7 +616,7 @@ width: 1.8rem;
 .post-date {
   font-size: 2rem;
   font-weight: 100;
-  color: var(--light-text);
+  color: var(--medium-text);
 }
 
 .post-title {
