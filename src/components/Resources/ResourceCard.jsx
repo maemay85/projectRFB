@@ -1,32 +1,27 @@
 
 import { PropTypes } from 'prop-types'
+import { Link } from 'react-router-dom';
 
 
 const ResourceCard = (props) => {
   const text = props.text;
-  const url = props.url;
-  const category = props.category;
+  const title = props.title;
   const imageUrl = props.imageUrl;
   return (
-    <>
-      <a href={url} target='_blank' rel='noreferrer'>
-        <div className="resource-container">
 
-          <div className="image-container">
-            <img src={imageUrl} />
-          </div>
-          <div className='subtitle'>{category}</div>
-          <div className='title'>{text}</div>
-        </div>
-      </a>
-    </>
+    <div className="resource-card-container">
+      <div className='resource-card-image'>
+        <img src={`${imageUrl}`} />
+      </div>
+      <div className='resource-card-title'>{title}</div>
+      <div className='resource-card-text'>{text}</div>
+    </div>
   )
 }
 
 ResourceCard.propTypes = {
   text: PropTypes.string,
-  url: PropTypes.string,
-  category: PropTypes.string,
+  title: PropTypes.string,
   imageUrl: PropTypes.string
 }
 

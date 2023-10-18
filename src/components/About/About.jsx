@@ -35,7 +35,7 @@ const language = props.language
         </div>
 
       </div>
-    <Contact language={language} />
+
     </>
   )
 }
