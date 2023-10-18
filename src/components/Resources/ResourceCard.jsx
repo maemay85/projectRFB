@@ -1,6 +1,6 @@
 
 import { PropTypes } from 'prop-types'
-import { Link } from 'react-router-dom';
+
 
 
 const ResourceCard = (props) => {
@@ -15,6 +15,7 @@ const ResourceCard = (props) => {
       </div>
       <div className='resource-card-title'>{title}</div>
       <div className='resource-card-text'>{text}</div>
+      ... READ MORE
     </div>
   )
 }

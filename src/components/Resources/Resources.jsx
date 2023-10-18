@@ -11,42 +11,24 @@ const Resources = (props) => {
   return (
     <>
         <div id="resources-grid-container">
-        { language === 'english' ?
+
         <>
         <div className="title">
-          <h1>RESOURCES</h1>
+          <h1>{language === 'english' ? 'RESOURCES' : 'RECURSOS'}</h1>
         </div>
-          {resources.english.map((resource)=>{
+          {resources.map((resource)=>{
             return (
               <ResourceCard
-                key={resource.title}
-                text={resource.title}
-                url={resource.url}
-                category={resource.category}
+                key={resource.title.english}
+                title={language === 'english' ? resource.title.english : resource.title.español}
+                text={language === 'english' ? resource.body.english : resource.body.español}
                 imageUrl={resource.imageUrl}
               />
             )})
           }
           </>
-           :
-           <>
-           <div className="title">
-             <h1>RECURSOS</h1>
-           </div>
-             {resources.español.map((resource)=>{
-            return (
-              <ResourceCard
-                key={resource.title}
-                text={resource.title}
-                url={resource.url}
-                category={resource.category}
-                imageUrl={resource.imageUrl}
-              />
-            )
-          })
-        }
-</>
-         }</div>
+
+         </div>
 
 
     </>

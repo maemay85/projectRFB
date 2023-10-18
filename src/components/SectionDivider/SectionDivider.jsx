@@ -35,7 +35,7 @@ const SectionDivider = (props) => {
 
 SectionDivider.propTypes = {
   language: PropTypes.string,
-  text: PropTypes.string
+  section: PropTypes.string
 }
 
 export default SectionDivider;

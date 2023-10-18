@@ -16,8 +16,9 @@ function App() {
       <nav>
         <Nav handleLanguageChange={handleLanguageChange} language={language}/>
       </nav>
-      <div id="app-container" className='row'>
+      <div id="app-container">
         <AppRoutes language={language}/>
+
       </div>
 
     </>
