@@ -243,21 +243,26 @@ img {
   margin-top: -1vw;
 }
 
-.resource-container {
+.resource-preview-container {
   position: relative;
     border-radius: 1rem;
     padding: 0.5rem;
     margin: 2rem;
-    color: #ccc;
+    color: var(--dark-text);
     display: flex;
-    width: 20vw;
+    width: 60vw;
     align-items: left;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
-.resource-container:hover {
-  box-shadow: .1rem 0 .5rem .1rem var(--medium-text);
+
+.resource-preview-image {
+  width: 10vw;
+}
+
+.resource-preview-body {
+  width: 50vw;
 }
 
 /* IDs */
@@ -278,7 +283,7 @@ img {
   margin: 2vw 0 0 1vw;
   padding: 0;
   width: 92vw;
-  height: 8.8125rem;
+  height: 2vw;
   z-index: 4;
 }
 
@@ -293,8 +298,8 @@ img {
 
 #nav-link-wrapper {
   position: relative;
-  width: 28vw;
-  font-size: 1.3rem;
+  width: 23vw;
+  font-size: 1.1rem;
   letter-spacing: .2rem;
   line-height: 3rem;
   display: flex;
@@ -305,8 +310,8 @@ img {
 
 #nav-language-toggle {
   position: relative;
-  width: 10vw;
-  font-size: .85rem;
+  width: 9vw;
+  font-size: .75rem;
   cursor: pointer;
   color: var(--light-text);
   display: flex;
@@ -316,7 +321,7 @@ img {
 }
 
 #site-title {
-  margin-left: 1rem;
+  margin-left: 4rem;
 }
 
 a#site-title:hover {
@@ -327,15 +332,19 @@ a#site-title:hover {
 
 #site-logo {
   position: relative;
-  height: 4vw;
+  height: 3.5vw;
   margin-top: .5rem;
+
 }
 
 #site-title-text {
-  font-size: 3.5rem;
+  height: 3vw;
+  font-size: 2.1rem;
   letter-spacing: .1rem;
+  line-height: 2rem;
   font-weight: 600;
-  margin-left: .5rem;
+  margin-top: .2rem;
+  margin-left: .3rem;
 }
 
 #search-icon {
@@ -414,29 +423,43 @@ a#site-title:hover {
   font-size: 1.5rem;
 }
 
-#resources-page-container {
+#top-container {
   margin: 0 0 0 -1rem;
   width: 99vw;
 }
 
-#resources-heading-wrapper {
+#top-wrapper {
   width: 100%;
   height: auto;
   margin: 0 -1rem 0 -2rem;
 }
 
-#resources-heading-wrapper h1{
+#top-wrapper h1{
   margin: -53vw 0 0 0;
   padding: 0 10vw;
   font-size: 2.875rem;
 }
+
+#top-text-top-lines {
+  position: relative;
+  margin-top: -3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#top-text-bottom-line {
+  position: relative;
+  margin-top: 10vw;
+  align-items: center;
+}
+
 
 #resources-grid-container {
   margin: 5rem 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 98%;
 }
 

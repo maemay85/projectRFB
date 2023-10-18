@@ -1,4 +1,4 @@
-import ResourceCard from "./ResourceCard"
+import ResourcePreview from "./ResourcePreview"
 import { PropTypes } from 'prop-types'
 import resourceData from "../../assets/resourceData";
 
@@ -18,7 +18,7 @@ const Resources = (props) => {
         </div>
           {resources.map((resource)=>{
             return (
-              <ResourceCard
+              <ResourcePreview
                 key={resource.title.english}
                 title={language === 'english' ? resource.title.english : resource.title.español}
                 text={language === 'english' ? resource.body.english : resource.body.español}

@@ -2,11 +2,11 @@ const resourceData =
       [
         {
           title: {
-                   english: 'Resource One',
+                   english: 'Automated City Register Information System (ACRIS)',
                    español: 'Recurso Uno'
                  },
           body:  {
-                   english: 'resource one text body',
+                   english: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat',
                    español: 'resource one text body but in spanish'
                  },
           url: 'url of the resource',
