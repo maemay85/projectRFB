@@ -310,7 +310,7 @@ img {
 
 #nav-language-toggle {
   position: relative;
-  width: 9vw;
+  width: 9.5vw;
   font-size: .75rem;
   cursor: pointer;
   color: var(--light-text);
@@ -318,6 +318,12 @@ img {
   flex-direction: row;
   align-items: self-start;
   justify-content: space-between;
+}
+
+#language-icon {
+  width: 1rem;
+  margin-top: -.2rem;
+  margin-left: 1rem;
 }
 
 #site-title {
