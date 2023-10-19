@@ -207,15 +207,15 @@ img {
 }
 
 .title, .subtitle {
-
-
   font-family: 'Noto Sans', sans-serif;
   color: var(--dark-text);
 }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .08rem;
+  line-height: 2.5rem;
 }
 
 .subtitle {
@@ -247,22 +247,56 @@ img {
   position: relative;
     border-radius: 1rem;
     padding: 0.5rem;
-    margin: 2rem;
+    margin: 4vw 0 0 -3vw;
     color: var(--dark-text);
     display: flex;
-    width: 60vw;
+    width: 69vw;
+    height: 12vw;
     align-items: left;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 
 .resource-preview-image {
-  width: 10vw;
+  position: relative;
+  width: 12vw;
+  height: 12vw;
+  border: .5px solid var(--dark-text);
+}
+
+.even {
+  background-color: var(--bright-pop);
+}
+
+.odd {
+  background-color: var(--color-background);
+}
+
+.read-more {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-pop);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.resource-preview-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -4vw 0 0 -4vw;
+  width: 8vw;
 }
 
 .resource-preview-body {
-  width: 50vw;
+  width: 55vw;
+}
+
+.resource-preview-text {
+  font-size: 1.2rem;
 }
 
 /* IDs */

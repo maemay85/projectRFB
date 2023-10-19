@@ -6,7 +6,8 @@ import resourceData from "../../assets/resourceData";
 const Resources = (props) => {
 
   const language = props.language;
-  const resources = resourceData
+  const resources = resourceData;
+  let oddEven = 'odd';
 
   return (
     <>
@@ -17,12 +18,14 @@ const Resources = (props) => {
           <h1>{language === 'english' ? 'RESOURCES' : 'RECURSOS'}</h1>
         </div>
           {resources.map((resource)=>{
+            oddEven === 'odd' ? oddEven='even' : oddEven='odd'
             return (
               <ResourcePreview
                 key={resource.title.english}
                 title={language === 'english' ? resource.title.english : resource.title.español}
                 text={language === 'english' ? resource.body.english : resource.body.español}
                 imageUrl={resource.imageUrl}
+                oddEven={oddEven}
               />
             )})
           }
