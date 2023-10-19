@@ -7,7 +7,7 @@ const resourceData =
                  },
           body:  {
                    english: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat',
-                   español: 'resource one text body but in spanish'
+                   español: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat...'
                  },
           url: 'url of the resource',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/Resource 1.png'
@@ -19,8 +19,8 @@ const resourceData =
             español: 'Recurso Dos'
           },
    body:  {
-            english: 'resource two text body',
-            español: 'resource two text body but in spanish'
+            english: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat...',
+            español: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat...'
           },
           url: 'url of the resource',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/Resource 2.png'
@@ -31,8 +31,8 @@ const resourceData =
             español: 'Recurso Tres'
           },
    body:  {
-            english: 'resource three text body',
-            español: 'resource three text body but in spanish'
+            english: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat...',
+            español: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo csdvfsdvdxvxcvxvxcvxcvxcvxcvxcvxcvxcvxcxconsequat...'
           },
           url: 'url of the resource',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/Resource 3.png'

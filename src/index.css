@@ -280,7 +280,11 @@ img {
   color: var(--dark-pop);
   display: flex;
   flex-direction: row;
+}
 
+.read-more img {
+  width: 4vw;
+  margin-left: 1vw;
 }
 
 .resource-preview-image img {
