@@ -424,14 +424,28 @@ a#site-title:hover {
   letter-spacing: .1rem;
 }
 
-#explore-resources {
+#explore-resources, #learn-more {
   width: 100vw;
   margin-left: -1vw;
-  margin-top: -12vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-background);
+}
+
+#explore-resources {
+  margin-top: -12vw;
+}
+
+#learn-more {
+  margin-top: 2vw;
+}
+
+#learn-more .section-divider{
+  width: 33vw;
+  height: 15vw;
+  margin-bottom: -1.5vw;
+  padding-bottom: 2vw;
 }
 
 #explore-resources .section-divider {
@@ -458,7 +472,6 @@ a#site-title:hover {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-
 }
 
 #about-page-background-image {
@@ -470,10 +483,10 @@ a#site-title:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -44vw;
-  margin-top: -28vw;
-  width: 80vw;
-  height: 55vw;
+  margin-left: -33vw;
+  margin-top: -15vw;
+  width: 60vw;
+  height: 32vw;
   background-color: var(--primary-background);
   border-radius: 3rem;
   display: flex;
@@ -481,19 +494,30 @@ a#site-title:hover {
   justify-content: space-around;
   padding-left: 4vw;
   padding-right: 4vw;
-
+  border: .5px solid var(--dark-pop);
 }
 
 #about-page-text-wrapper {
   text-align: left;
-  width: 50%;
-  font-size: 1.25rem;
-  padding-left: 3rem;
+  width: 37vw;
+  font-size: 1.22rem;
+  line-height: 1.75rem;
 }
 
 #about-page-headshot-image {
   position: relative;
-  width: 50%;
+  box-shadow: -1.75rem -1.75rem var(--dark-pop), 1.75rem 1.75rem var(--bright-pop);
+  margin-left: -2vw;
+  width: 17vw;
+  height: 20vw;
+}
+
+#about-page-headshot-image-wrapper {
+  height: 0;
+}
+
+#about-page-headshot-image-wrapper img {
+  height: 20vw;
 }
 
 #disclaimer-page-container {
