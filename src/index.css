@@ -56,13 +56,13 @@ body {
 h1 {
   color: var(--dark-text);
   font-family: 'henrik';
-  font-size: 4rem;
+  font-size: 3.75rem;
 }
 
 h2 {
   color: var(--dark-text);
   font-family: 'henrik';
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 a {
@@ -224,23 +224,13 @@ img {
   font-weight: 700;
 }
 
-.page-description-container {
+.section-divider {
   border: .1rem solid var(--dark-text);
   border-radius: 3rem;
   background-color: var(--bright-pop);
   width: 40vw;
   padding: 2rem 7rem;
-  margin: 20vw 0 0 0;
   text-align: center;
-}
-
-.page-description-container h2 {
-  font-size: 3vw;
-}
-
-.page-description-container p {
-  font-size: 2vw;
-  margin-top: -1vw;
 }
 
 .resource-preview-container {
@@ -267,12 +257,6 @@ img {
 
 /* IDs */
 
-#app-container {
-  width: 97vw;
-  height: 88vh;
-  margin: 4rem 2rem 1rem 1rem;
-}
-
 #top-nav-container {
   display: flex;
   align-items: center;
@@ -280,11 +264,39 @@ img {
   position: relative;
   background-color: var(--three);
   flex-direction: row;
-  margin: 2vw 0 0 1vw;
+  margin: 0;
   padding: 0;
   width: 92vw;
-  height: 3vw;
+  height: 9vw;
   z-index: 4;
+}
+
+
+#site-title {
+  margin-left: 5vw;
+}
+
+a#site-title:hover {
+  text-decoration: none;
+  color: rgba(var(--medium-text), 1);
+  font-weight: 800;
+}
+
+#site-logo {
+  position: relative;
+  height: 3.5vw;
+  margin-top: .5rem;
+
+}
+
+#site-title-text {
+  height: 3vw;
+  font-size: 2.1rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-top: .2rem;
+  margin-left: .3rem;
 }
 
 #nav-right-side-container {
@@ -328,39 +340,52 @@ img {
   margin-left: 1rem;
 }
 
-#site-title {
-  margin-left: 4rem;
-}
-
-a#site-title:hover {
-  text-decoration: none;
-  color: rgba(var(--medium-text), 1);
-  font-weight: 800;
-}
-
-#site-logo {
-  position: relative;
-  height: 3.5vw;
-  margin-top: .5rem;
-
-}
-
-#site-title-text {
-  height: 3vw;
-  font-size: 2.1rem;
-  letter-spacing: .1rem;
-  line-height: 2rem;
-  font-weight: 600;
-  margin-top: .2rem;
-  margin-left: .3rem;
-}
-
-#search-icon {
-  height: 1.5rem;
-}
 
 #language-icon {
   height: 1.5rem;
+}
+
+#app-container {
+  width: 100%;
+  height: 88vh;
+}
+
+
+#top-container {
+  margin: 0 0 0 -1rem;
+  width: 100%;
+}
+
+#top-text-wrapper {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  margin: 0 0 0 -32.5vw;
+  width: 65vw;
+}
+
+#top-text-top-lines {
+  letter-spacing: .15rem;
+  line-height: 3.25rem;
+}
+
+#top-text-bottom-line {
+  margin-top: -2.25vw;
+  letter-spacing: .1rem;
+}
+
+#explore-resources {
+  width: 100%;
+
+}
+
+#resources-grid-container {
+  margin: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 98%;
 }
 
 #about-page-container {
@@ -431,47 +456,6 @@ a#site-title:hover {
   font-size: 1.5rem;
 }
 
-#top-container {
-  margin: 0 0 0 -1rem;
-  width: 99vw;
-}
-
-#top-wrapper {
-  width: 100%;
-  height: auto;
-  margin: 0 -1rem 0 -2rem;
-}
-
-#top-wrapper h1{
-  margin: -53vw 0 0 0;
-  padding: 0 10vw;
-  font-size: 3.1rem;
-}
-
-#top-text-top-lines {
-  position: relative;
-  margin-top: -2.5vw;
-  letter-spacing: .1rem;
-  line-height: 3.25rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#top-text-bottom-line {
-  position: relative;
-  margin-top: 10vw;
-  align-items: center;
-}
-
-
-#resources-grid-container {
-  margin: 5rem 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 98%;
-}
 
 #contact-page-container {
   margin: 0 0 0 -2rem;
