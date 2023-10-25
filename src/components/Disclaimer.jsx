@@ -1,11 +1,10 @@
 import { PropTypes } from 'prop-types'
-import Contact from './Contact/Contact'
 
 function Disclaimer(props) {
 const language = props.language
 
   return (
-    <>
+
       <div id="disclaimer-page-container">
 
       <div id="disclaimer-page-header">
@@ -19,7 +18,7 @@ const language = props.language
         </h1>}
       </div>
           <div id="disclaimer-page-content-container">
-          <div id="disclaimer-page-text-wrapper">
+
             {language==='english' ?
             <>
                 <p> The information you obtain at this site is not, nor is it intended to be, legal advice. You should consult an attorney for advice regarding your individual situation. We invite you to contact us and welcome your calls, letters and electronic mail. Contacting us does not create an attorney-client relationship. Please do not send any confidential information to us until such time as an attorney-client relationship has been established.</p>
@@ -30,10 +29,6 @@ const language = props.language
               </>}
             </div>
         </div>
-
-      </div>
-    <Contact language={language} />
-    </>
   )
 }
 

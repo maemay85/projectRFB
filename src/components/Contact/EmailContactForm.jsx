@@ -1,10 +1,12 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import emailjs from "emailjs-com";
 import { PropTypes } from 'prop-types'
+import { Link } from "react-router-dom";
 
 const EmailContactForm = (props) => {
   const form = useRef();
   const language = props.language;
+  const [checked, setChecked] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -12,6 +14,7 @@ const EmailContactForm = (props) => {
     emailjs.sendForm('service_f0weiij', 'template_9tf6q6f', form.current, 'hxHheb-8UKemaGtn8').then((result) => {
       console.log(result.text);
       alert("message sent!")
+      setChecked(false)
     }, (error) => {
       console.log(error.text);
     })
@@ -24,11 +27,11 @@ const EmailContactForm = (props) => {
         <form ref={form} onSubmit={sendEmail}>
           <div id="email-form">
             <div className="email-form-field">
-              <label>Name</label>
+              <label>First Name</label>
               <input type="text" name="name" />
             </div>
             <div className="email-form-field">
-            <label>Email</label>
+            <label>Email Address</label>
             <input type="email"  name="email" />
             </div>
             <div className="email-form-field">
@@ -42,8 +45,17 @@ const EmailContactForm = (props) => {
               <label>Message</label>
               <textarea name="message" />
             </div>
+            <div className="email-form-checkbox">
+              <label>I have read the <Link to='/disclaimer' target="_blank" rel="noopener noreferrer">disclaimer</Link></label>
+              <input type="checkbox" onClick={(e)=> e.target.checked ? setChecked(true) : setChecked(false)}/>
+
+
+            </div>
+            {checked === true ? <input type="submit" value="Submit" className="submit" /> :
+            <div className="submit unchecked" onClick={()=>alert('Please read the disclaimer, and check the box before submitting your message')}>Submit</div>}
+
           </div>
-          <input type="submit" value="Submit" className="submit" />
+
         </form>
         :
         <form ref={form} onSubmit={sendEmail}>
