@@ -679,22 +679,26 @@ width: 1.5rem;
   align-items: center;
 }
 
-
-
 #disclaimer-page-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 90vw;
   height: 40vw;
-  margin: -20vw 0 0 -45vw;
+  margin: -10vw 0 0 5vw;
 }
 
-#disclaimer-page-container p {
+#privacy-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 86vw;
+  margin: 0 0 0 7vw;
+}
+
+#disclaimer-page-container p, #privacy-page-container p {
   font-size: 1.25rem;
 }
 

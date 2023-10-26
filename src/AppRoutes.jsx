@@ -19,8 +19,8 @@ const AppRoutes = (props) => {
         <Route path='/contact' element={<Contact language={language}/>} />
         <Route path='/email' element={<EmailContactForm language={language}/>} />
         <Route path='/disclaimer' element={<Disclaimer language={language}/>} />
-        <Route path='/privacy-and-accessibility' element={<PrivacyAndAccessibility language={language}/>} />
-        <Route path='*' element={<About language={language}/>} />
+        <Route path='/PrivacyAndAccessibility' element={<PrivacyAndAccessibility language={language}/>} />
+        <Route path='*' element={<Home language={language}/>} />
       </Routes>
     </div>
   )
