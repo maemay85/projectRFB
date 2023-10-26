@@ -290,12 +290,25 @@ img {
 
 }
 
-
 .resource-preview-image {
-  position: relative;
   width: 12vw;
   height: 12vw;
   border: .5px solid var(--dark-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resource-preview-image img {
+  height: 10vw;
+}
+
+.resource-preview-body {
+  width: 55vw;
+}
+
+.resource-preview-text {
+  font-size: 1.2rem;
 }
 
 .even {
@@ -319,21 +332,6 @@ img {
   margin-left: 1vw;
 }
 
-.resource-preview-image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -4vw 0 0 -4vw;
-  width: 8vw;
-}
-
-.resource-preview-body {
-  width: 55vw;
-}
-
-.resource-preview-text {
-  font-size: 1.2rem;
-}
 
 .email-form-checkbox a {
   color: var(--secondary-background);

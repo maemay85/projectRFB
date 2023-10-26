@@ -44,8 +44,8 @@ const resourceData =
             español: `Búsqueda de información sobre edificios (Departamento de Edificios de la Ciudad de Nueva York)`
           },
           body: {
-            english: `The Building Information Search, provided by the NYC Department of Buildings, is an online tool for accessing crucial information about buildings in New York City. It allows users to retrieve details on property records, permits, violations, and complaints, aiding in transparency and safety in the city's built environment`,
-            español: `La Búsqueda de información sobre edificios, proporcionada por el Departamento de Edificios de la Ciudad de Nueva York, es una herramienta en línea para acceder a información crucial sobre los edificios de la ciudad de Nueva York. Permite a los usuarios recuperar detalles sobre registros de propiedad, permisos, infracciones y quejas, lo que contribuye a la transparencia y la seguridad en el entorno construido de la ciudad`
+            english: `An online tool for accessing crucial information about buildings in New York City. It allows users to retrieve details on property records, permits, violations, and complaints, aiding in transparency and safety in the city's built environment`,
+            español: `Una herramienta en línea para acceder a información crucial sobre los edificios de la ciudad de Nueva York. Permite a los usuarios recuperar detalles sobre registros de propiedad, permisos, infracciones y quejas, lo que contribuye a la transparencia y la seguridad en el entorno construido de la ciudad`
           },
           url: 'https://a810-bisweb.nyc.gov/bisweb/bispi00.jsp',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/BuildingSearch.png'
@@ -56,8 +56,8 @@ const resourceData =
             español: `Autoservicio para permisos, citas y solicitudes en línea (Departamento de Edificios de la Ciudad de Nueva York)`
           },
           body: {
-            english: `The Self-service for online Permits, Appointments, and Applications is a convenient digital platform offered by the NYC Department of Buildings. It enables users to easily apply for permits, schedule appointments, and submit various applications related to building and construction projects online, streamlining the process for property owners and developers`,
-            español: `El Autoservicio para Permisos, Citas y Solicitudes en línea es una conveniente plataforma digital ofrecida por el Departamento de Edificios de la Ciudad de Nueva York. Permite a los usuarios solicitar permisos, programar citas y enviar diversas solicitudes relacionadas con proyectos de edificación y construcción en línea fácilmente, agilizando el proceso para propietarios y desarrolladores`
+            english: `A convenient digital platform offered by the NYC Department of Buildings. It enables users to easily apply for permits, schedule appointments, and submit various applications related to building and construction projects online`,
+            español: `Una conveniente plataforma digital ofrecida por el Departamento de Edificios de la Ciudad de Nueva York. Permite a los usuarios solicitar permisos, programar citas y enviar diversas solicitudes relacionadas con proyectos de edificación y construcción en línea fácilmente`
           },
           url: 'https://a810-dobnow.nyc.gov/publish/#!/',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/ACRIS.png'
@@ -69,7 +69,7 @@ const resourceData =
           },
           body: {
             english: `The New York State Unified Court System's eCourts is an advanced digital platform revolutionizing court operations. It allows online access to case information, e-filing of legal documents, and scheduling of court appearances. This user-friendly system enhances efficiency and accessibility in the state's judicial proceedings`,
-            español: `Los tribunales electrónicos del Sistema Judicial Unificado del Estado de Nueva York son una plataforma digital avanzada que revoluciona las operaciones judiciales. Permite el acceso en línea a información del caso, la presentación electrónica de documentos legales y la programación de comparecencias ante el tribunal. Este sistema fácil de usar mejora la eficiencia y accesibilidad en los procedimientos judiciales del estado.`
+            español: `Una plataforma digital avanzada que revoluciona las operaciones judiciales. Permite el acceso en línea a información del caso, la presentación electrónica de documentos legales y la programación de comparecencias ante el tribunal. Este sistema fácil de usar mejora la eficiencia y accesibilidad en los procedimientos judiciales del estado.`
           },
           url: 'https://iapps.courts.state.ny.us/webcivil/ecourtsMain',
           imageUrl: 'https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/eCourts.png'

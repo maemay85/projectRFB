@@ -24,6 +24,7 @@ const Resources = (props) => {
                 key={resource.title.english}
                 title={language === 'english' ? resource.title.english : resource.title.español}
                 text={language === 'english' ? resource.body.english : resource.body.español}
+                url={resource.url}
                 imageUrl={resource.imageUrl}
                 oddEven={oddEven}
               />
