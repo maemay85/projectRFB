@@ -1,6 +1,5 @@
 import About from "../About/About"
 import Contact from "../Contact/Contact"
-import Footer from "../Footer/Footer"
 import Resources from "../Resources/Resources"
 import SectionDivider from "../SectionDivider/SectionDivider"
 import Top from "../Top/Top"
@@ -18,7 +17,6 @@ const Home = (props) => {
       <SectionDivider language={language} section={'about'} />
       <About language={language} />
       <Contact language={language} />
-      <Footer language={language} />
 
     </>
   )

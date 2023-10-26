@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types'
-import Footer from './Footer/Footer'
+
 
 function Disclaimer(props) {
 const language = props.language
@@ -30,7 +30,7 @@ const language = props.language
               </>}
             </div>
         </div>
-        <Footer language={language} />
+
         </>
   )
 }

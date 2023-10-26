@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types'
-import Footer from './Footer/Footer'
+
 
 const PrivacyAndAccessibility = (props) => {
 const language = props.language
@@ -138,7 +138,7 @@ const language = props.language
         </div>
 
       </div>
-    <Footer language={language} />
+
     </>
   )
 }

@@ -2,6 +2,7 @@
 import Nav from './components/Nav/Nav'
 import AppRoutes from './AppRoutes'
 import { useState } from 'react';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
       </nav>
       <div id="app-container">
         <AppRoutes language={language}/>
-
+        <Footer language={language} />
       </div>
 
     </>
