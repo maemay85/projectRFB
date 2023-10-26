@@ -35,7 +35,7 @@ const SectionDivider = (props) => {
                   </>
                   :
                   <>
-                    <h2>{`APRENDE MÁS`}</h2>
+                    <h2>{`APRENDE MAS`}</h2>
                     <p>{`Leer más sobre la práctica de Reuben`}</p>
                   </>
                 }

@@ -48,8 +48,6 @@ const EmailContactForm = (props) => {
             <div className="email-form-checkbox">
               <label>I have read the <Link to='/disclaimer' target="_blank" rel="noopener noreferrer">disclaimer</Link></label>
               <input type="checkbox" onClick={(e)=> e.target.checked ? setChecked(true) : setChecked(false)}/>
-
-
             </div>
             {checked === true ? <input type="submit" value="Submit" className="submit" /> :
             <div className="submit unchecked" onClick={()=>alert('Please read the disclaimer, and check the box before submitting your message')}>Submit</div>}
@@ -79,8 +77,13 @@ const EmailContactForm = (props) => {
               <label>Mensaje</label>
               <textarea name="message" />
             </div>
+            <div className="email-form-checkbox">
+              <label>He leído <Link to='/disclaimer' language={language} target="_blank" rel="noopener noreferrer">el aviso legal</Link></label>
+              <input type="checkbox" onClick={(e)=> e.target.checked ? setChecked(true) : setChecked(false)}/>
+            </div>
+            {checked === true ? <input type="submit" value="Entregar" className="submit" /> :
+            <div className="submit unchecked" onClick={()=>alert('Lea el descargo de responsabilidad y marque la casilla antes de enviar su mensaje')}>Entregar</div>}
           </div>
-          <input type="submit" value="Entregar" className="submit" />
         </form>}
     </div>
   )
