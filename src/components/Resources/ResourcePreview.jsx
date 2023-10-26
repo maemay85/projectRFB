@@ -8,6 +8,7 @@ const ResourcePreview = (props) => {
   const title = props.title;
   const url = props.url;
   const imageUrl = props.imageUrl;
+  const language = props.language;
   const oddEven = props.oddEven;
 
   return (
@@ -21,7 +22,7 @@ const ResourcePreview = (props) => {
         <div className='resource-preview-title title'>{title}</div>
         <div className='resource-preview-text'>{text}...</div>
         <a href={`${url}`} target="_blank" rel="noopener noreferrer" className='read-more'>
-          <div>READ MORE</div>
+          <div>{language === 'english' ? 'VISIT SITE' : 'VISITAR SITIO'}</div>
           <img src='https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/readmorearrow.svg' />
         </a>
       </div>
@@ -34,6 +35,7 @@ ResourcePreview.propTypes = {
   title: PropTypes.string,
   url: PropTypes.string,
   imageUrl: PropTypes.string,
+  language: PropTypes.string,
   oddEven: PropTypes.string
 }
 
