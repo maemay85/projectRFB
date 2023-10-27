@@ -6,11 +6,8 @@ const Top = (props) => {
   return (
     <>
       <div id="top-container" className="column">
-      <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient map 1.png" />
+
         {language === 'english' ?
-
-
-
 
           <div id="top-text-wrapper" className="column">
 

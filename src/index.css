@@ -443,17 +443,15 @@ a#site-title:hover {
 #top-container {
   margin: 0 0 0 -1rem;
   width: 100%;
+  background-image: url(src/assets/light_gradient.png);
+  background-size: 99vw 69vw;
+  height: 69vw;
 }
 
-#top-container img {
-  z-index: -1;
-}
+/* https://raw.githubusercontent.com/maemay85/projectRFB/main/ */
 
 #top-text-wrapper {
-  position: absolute;
-  top: 37%;
-  left: 50%;
-  margin: 0 0 0 -32.5vw;
+  margin-top: 10vw;
   width: 65vw;
 }
 
