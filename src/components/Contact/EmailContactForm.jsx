@@ -2,6 +2,7 @@ import { useRef, useState } from "react"
 import emailjs from "emailjs-com";
 import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
+import EmailContactDropdown from "./EmailContactDropdown";
 
 const EmailContactForm = (props) => {
   const form = useRef();
@@ -41,6 +42,7 @@ const EmailContactForm = (props) => {
                 <option value="info">General Information</option>
               </select>
             </div>
+            <EmailContactDropdown language={language}/>
             <div className="email-form-field">
               <label>Message</label>
               <textarea name="message" />
@@ -73,6 +75,7 @@ const EmailContactForm = (props) => {
                 <option value="info">Información general</option>
               </select>
             </div>
+            <EmailContactDropdown language={language}/>
             <div className="email-form-field">
               <label>Mensaje</label>
               <textarea name="message" />
