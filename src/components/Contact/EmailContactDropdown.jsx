@@ -4,19 +4,19 @@ import { useEffect, useState } from "react";
 const EmailContactDropdown = (props) => {
 
   const language = props.language;
-  const initialSubject = () => language === 'english' ? 'Select a subject:' : 'Seleccione un tema:'
-  const [subject, setSubject] = useState(initialSubject);
+  const subject = props.subject;
+  const changeSubject = props.changeSubject;
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
   }
   const handleSubject = (e) => {
-    setSubject(e.target.innerText);
+    changeSubject(e.target.innerText)
     setOpen(false)
   }
 
   useEffect(()=>{
-    setSubject(subject)
+
   },[subject, open, language])
 
 
@@ -61,7 +61,9 @@ const EmailContactDropdown = (props) => {
   )
 }
 EmailContactDropdown.propTypes = {
-  language: PropTypes.string
+  language: PropTypes.string,
+  changeSubject: PropTypes.function,
+  subject: PropTypes.string
 }
 
 export default EmailContactDropdown
