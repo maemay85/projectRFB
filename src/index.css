@@ -311,6 +311,7 @@ img {
   line-height: 2.5rem;
 }
 
+
 .subtitle {
   margin: 1rem 0;
   font-size: .8rem;
@@ -372,6 +373,16 @@ img {
   font-size: 1.2rem;
 }
 
+.resource-preview-title {
+  margin-top: -.5vw;
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--dark-text);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: .08rem;
+  line-height: 2.5rem;
+}
+
 .even {
   background-color: var(--bright-pop);
 }
@@ -381,6 +392,7 @@ img {
 }
 
 .read-more {
+  position: absolute;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--dark-pop);
@@ -391,6 +403,11 @@ img {
 .read-more img {
   width: 4vw;
   margin-left: 1vw;
+}
+
+a.read-more {
+  position: absolute;
+  top: 86%;
 }
 
 

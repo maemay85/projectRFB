@@ -19,7 +19,7 @@ const ResourcePreview = (props) => {
       </div>
 
       <div className='resource-preview-body'>
-        <div className='resource-preview-title title'>{title}</div>
+        <div className='resource-preview-title'>{title}</div>
         <div className='resource-preview-text'>{text}...</div>
         <a href={`${url}`} target="_blank" rel="noopener noreferrer" className='read-more'>
           <div>{language === 'english' ? 'VISIT SITE' : 'VISITAR SITIO'}</div>
