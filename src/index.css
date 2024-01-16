@@ -503,9 +503,9 @@ a#site-title:hover {
 
 #top-container {
   margin: 0 0 0 -1rem;
-  width: 100%;
+  width: 100vw;
   background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient.png);
-  background-size: 99vw 69vw;
+  background-size: 100vw 69vw;
   height: 69vw;
 }
 
@@ -566,7 +566,7 @@ a#site-title:hover {
 }
 
 #about-page-container {
-  margin: 0 0 0 -2rem;
+  margin: 0 0 0 -1rem;
   position: relative;
   height: 66vw;
   display: flex;
