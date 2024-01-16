@@ -212,10 +212,48 @@ img {
   border-radius:.5rem;
   background-color: var(--secondary-background);
   font-family: 'Noto Sans';
-  font-weight: 600;
-  font-size: 1.5vw;
+  font-weight: 500;
+  font-size: 1.2vw;
   height: 3.778vw;
   z-index: 2;
+}
+
+.email-form-dropdown::after{
+  content: "v";
+  transform: scale(1.5, 1.2);
+  position: absolute;
+  left: 35%;
+  pointer-events: none;
+}
+
+.email-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 31vw;
+  border: 1px solid black;
+  color: rgba(var(--medium-text), 1);
+  margin: -1vw 0 0 -2.1vw;
+  padding: 1vw 1vw;
+  border-radius:.5rem;
+  background-color: var(--secondary-background);
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 1.2vw;
+  height: 3.778vw;
+  z-index: 3;
+}
+
+.email-dropdown-menu::after {
+  content: "v";
+  transform: scale(1.5, -1.2);
+  position: absolute;
+  left: 35%;
+  pointer-events: none;
+}
+
+.email-dropdown-item {
+ padding-left: 1vw;
 }
 
 .email-form-checkbox {
@@ -224,6 +262,10 @@ img {
   font-weight: 700;
   margin-bottom: 1vw;
   color: var(--secondary-background);
+}
+
+.extra-space-above {
+  margin-top: 2vw;
 }
 
 .submit {

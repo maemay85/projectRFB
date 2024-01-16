@@ -41,7 +41,7 @@ const EmailContactDropdown = (props) => {
           </>
           :
           <>
-           <p onClick={handleOpen}>{open ? `Seleccione un tema:` : subject}</p>
+           <p onClick={handleOpen}>{open ? null : subject}</p>
           {open ?
             <>
               <div onClick={handleSubject}>
@@ -62,7 +62,7 @@ const EmailContactDropdown = (props) => {
 }
 EmailContactDropdown.propTypes = {
   language: PropTypes.string,
-  changeSubject: PropTypes.function,
+  changeSubject: PropTypes.func,
   subject: PropTypes.string
 }
 

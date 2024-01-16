@@ -7,7 +7,7 @@ import EmailContactDropdown from "./EmailContactDropdown";
 const EmailContactForm = (props) => {
   const form = useRef();
   const language = props.language;
-  const initialSubject = language === 'english' ? 'Select a subject:' : 'Seleccione un tema:';
+  const initialSubject = language === 'english' ? 'Click to select a subject:' : 'Haga clic para seleccionar un tema:';
   const [checked, setChecked] = useState(false);
   const [subject, setSubject] = useState(initialSubject);
 
@@ -37,15 +37,16 @@ const EmailContactForm = (props) => {
             <label>Email Address</label>
             <input type="email"  name="email" />
             </div>
-
+            <div className="email-form-field">
+            <label>Subject</label>
             <EmailContactDropdown
               subject={subject}
               changeSubject={subject => setSubject(subject)}
               language={language}
             />
             <input type='hidden' name='subject' value={subject} />
-
-            <div className="email-form-field">
+            </div>
+            <div className="email-form-field extra-space-above">
               <label>Message</label>
               <textarea name="message" />
             </div>
