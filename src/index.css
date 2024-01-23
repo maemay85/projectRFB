@@ -13,8 +13,8 @@ THIS FILE IS ORGANIZED AS FOLLOWS:
   font-weight: 400;
   --primary-background: #FFF;
   --secondary-background: #FFF;
-  --color-background: rgba(184, 144, 180, 0.74);
-  --bright-pop: #E9F88D;
+  --color-background: #C9ABC5;
+  --bright-pop: #E5E5E5;
   --dark-pop: #8A3683;
   --dark-text: #000000;
   --medium-text: 65, 64, 66;
@@ -84,6 +84,11 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+nav {
+  border-bottom: .135vw var(--dark-pop) solid;
+  margin-left: -1vw;
 }
 
 /* CLASSES */
@@ -388,7 +393,7 @@ img {
 }
 
 .odd {
-  background-color: var(--color-background);
+  background-color: var(--bright-pop);
 }
 
 .read-more {
@@ -421,8 +426,10 @@ a.read-more {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  line-height: .8rem;
 }
+
+
 
 /* IDs */
 
@@ -521,7 +528,7 @@ a#site-title:hover {
 #top-container {
   margin: 0 0 0 -1rem;
   width: 100vw;
-  background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient.png);
+  background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient.jpg);
   background-size: 100vw 69vw;
   height: 69vw;
 }
@@ -541,6 +548,11 @@ a#site-title:hover {
 #top-text-bottom-line {
   margin-top: -2.25vw;
   letter-spacing: .1rem;
+
+}
+
+#top-text-bottom-line h1 {
+  color: var(--dark-pop);
 }
 
 #explore-resources, #learn-more {
@@ -580,23 +592,21 @@ a#site-title:hover {
   justify-content: center;
   flex-direction: column;
   width: 98%;
+  padding-bottom: 5vw;
 }
 
 #about-page-container {
   margin: 0 0 0 -1rem;
   position: relative;
+  background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/unseen-histories-GBwEIHq1Imw-unsplash_duotone.png);
   height: 66vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   width: 100vw;
 }
 
-#about-page-background-image {
-  position: absolute;
-  z-index: -1;
-}
+
 
 #about-page-content-container {
   position: absolute;
@@ -712,6 +722,7 @@ a#site-title:hover {
   align-items: center;
   background-color: var(--color-background);
   color: var(--secondary-background);
+  padding-top: 5vw;
   width: 100vw;
   height: 28vw;
   margin: 0 0 0 -1vw;
@@ -738,7 +749,6 @@ a#site-title:hover {
 }
 
 #footer-social-wrapper {
-  margin-top: 1rem;
   width: 6vw;
 }
 
@@ -770,6 +780,7 @@ width: 1.5rem;
   flex-direction: column;
   width: 86vw;
   margin: 0 0 0 7vw;
+  padding-bottom: 5vw;
 }
 
 #disclaimer-page-container p, #privacy-page-container p {

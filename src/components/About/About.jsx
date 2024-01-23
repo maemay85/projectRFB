@@ -7,10 +7,6 @@ const language = props.language
   return (
     <>
       <div id="about-page-container">
-
-          <div id="about-page-background-image">
-            <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/unseen-histories-GBwEIHq1Imw-unsplash_duotone 2.png" />
-          </div>
           <div id="about-page-content-container">
             <div id="about-page-headshot-image">
               <div id='about-page-headshot-image-wrapper'>
