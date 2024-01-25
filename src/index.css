@@ -528,7 +528,7 @@ a#site-title:hover {
 #top-container {
   margin: 0 0 0 -1rem;
   width: 100vw;
-  background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/light_gradient.jpg);
+  background-image: url(https://github.com/maemay85/projectRFB/blob/main/src/assets/light-gradient.jpg?raw=true);
   background-size: 100vw 69vw;
   height: 69vw;
 }
@@ -596,14 +596,16 @@ a#site-title:hover {
 }
 
 #about-page-container {
-  margin: 0 0 0 -1rem;
+  margin: 0 0 -.3rem -1rem;
   position: relative;
   background-image: url(https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/unseen-histories-GBwEIHq1Imw-unsplash_duotone.png);
+  background-size: 100vw 66vw;
   height: 66vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  z-index: -1;
 }
 
 

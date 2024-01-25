@@ -56,7 +56,7 @@ function Contact(props) {
         <div id='contact-map-and-email-container'>
           <EmailContactForm language={language} />
           <div id='contact-map-image-wrapper'>
-            <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/rfbmap.png" />
+            <img src="https://raw.githubusercontent.com/maemay85/projectRFB/main/src/assets/BWMap.png" />
           </div>
         </div>
       </div>
