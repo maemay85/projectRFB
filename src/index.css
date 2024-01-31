@@ -86,11 +86,6 @@ img {
   height: auto;
 }
 
-nav {
-  border-bottom: .135vw var(--dark-pop) solid;
-  margin-left: -1vw;
-}
-
 /* CLASSES */
 
 .column {
@@ -528,10 +523,12 @@ a#site-title:hover {
 #top-container {
   margin: 0 0 0 -1rem;
   width: 100vw;
+  height: 69vw;
   background-image: url(https://github.com/maemay85/projectRFB/blob/main/src/assets/light-gradient.jpg?raw=true);
   background-size: 100vw 69vw;
-  height: 69vw;
 }
+
+
 
 /*  */
 
