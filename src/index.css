@@ -53,6 +53,12 @@ body {
   overflow-x: hidden;
 }
 
+nav {
+  border-bottom: 1px solid var(--dark-pop);
+  margin-left: -1rem;
+  padding-left: 1rem;
+}
+
 h1 {
   color: var(--dark-text);
   font-family: 'henrik';
@@ -651,7 +657,7 @@ a#site-title:hover {
 #contact-page-container {
   width: 100vw;
   height: 111vw;
-  margin: .28vw 0 0 -1vw;
+  margin: 0 0 0 -1vw;
   position: relative;
   background-color: var(--color-background);
 }
